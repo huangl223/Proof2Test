@@ -24,17 +24,13 @@ feature {NONE}
 			create counterexamples.make (0)
 			create error_routines.make (0)
 
-			print ("Input boogie file: ")
-			print (cmd_arguments.separate_character_option_value ('b') + "%N")
 			bpl_file_name :=  (cmd_arguments.separate_character_option_value ('b'))
 
-			print ("Input model file: ")
-			print (cmd_arguments.separate_character_option_value ('m') + "%N")
 			model_file_name :=  (cmd_arguments.separate_character_option_value ('m'))
 
-			print ("Output test file: ")
-			print (cmd_arguments.separate_character_option_value ('t') + "%N")
-			test_file_name := safe_file_name (cmd_arguments.separate_character_option_value ('t'))
+			test_file_name := "new_test_set.e"
+			
+			print ("Output test file: " + test_file_name)
 
 			generate_tests
 

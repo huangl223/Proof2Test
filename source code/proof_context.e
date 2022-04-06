@@ -10,7 +10,7 @@ class
 create
 	make
 
-feature
+feature  -- Initialize	
 	make (a_bpl_lines: ARRAY [IMMUTABLE_STRING_32]; error_routines: HASH_TABLE [ARRAY [IMMUTABLE_STRING_32], IMMUTABLE_STRING_32])
 			-- Initialization
 		do
@@ -29,7 +29,7 @@ feature
 
 		end
 
-feature -- Attributes
+feature -- Collected data
 
 	bpl_lines: ARRAY [IMMUTABLE_STRING_32]
 			-- Boogie program in lines
@@ -55,7 +55,7 @@ feature -- Attributes
 	creation_procedures: HASH_TABLE [ARRAY [IMMUTABLE_STRING_32], IMMUTABLE_STRING_32]
 			-- Mapping from class names to used creation procedures
 
-feature
+feature  -- Parse .bpl file to obtain context information
 
 	get_verification_context (error_routines: HASH_TABLE [ARRAY [IMMUTABLE_STRING_32], IMMUTABLE_STRING_32])
 			-- Obtain the context information from the .bpl file
@@ -205,8 +205,6 @@ feature
 			-- Get the return types and arguments'types from routines' signature
 		local
 			line, class_name, routine_name: STRING_32
-			bpl_file: PLAIN_TEXT_FILE
-			argument_count: INTEGER
 			words: LIST[STRING_32]
 
 		do

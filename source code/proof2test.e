@@ -13,7 +13,7 @@ inherit
 			default_create
 		end
 
-feature {NONE}
+feature {NONE}  -- Initialize
 
 	default_create
 			-- Initialization
@@ -29,14 +29,14 @@ feature {NONE}
 			model_file_name :=  (cmd_arguments.separate_character_option_value ('m'))
 
 			test_file_name := "new_test_set.e"
-			
+
 			print ("Output test file: " + test_file_name)
 
 			generate_tests
 
 		end
 
-feature {NONE}
+feature {NONE}  -- Tests generation
 
 	generate_tests
 			-- Generate tests from counterexample models.
@@ -142,7 +142,7 @@ feature {NONE}
 			end
 		end
 
-feature
+feature -- Files and data
 
 	bpl_file_name: STRING_32
 			-- Name of the .bpl file

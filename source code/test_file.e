@@ -10,10 +10,10 @@ class
 create
 	make
 
-feature
+feature -- Initialize
 
 	make (test_file_name: STRING_32; ap_error_routines: HASH_TABLE [ARRAY [IMMUTABLE_STRING_32], IMMUTABLE_STRING_32]; a_proof_context: PROOF_CONTEXT; a_counterexamples: HASH_TABLE [ARRAY [COUNTEREXAMPLE], IMMUTABLE_STRING_32])
-		-- Initialize
+
 		local
 			class_name: STRING_32
 		do
@@ -32,7 +32,7 @@ feature
 			generate_test_file
 		end
 
-feature
+feature -- Files and data
 
 	test_file: PLAIN_TEXT_FILE
 			-- Output .e file that storeds all test cases
@@ -61,7 +61,7 @@ feature
 	sequence_lengths: HASH_TABLE [IMMUTABLE_STRING_32, IMMUTABLE_STRING_32]
 			-- Sequences's lengths
 
-feature
+feature -- Test generation
 
 	generate_test_file
 			-- Write the test cases to the output file
@@ -171,7 +171,6 @@ feature
 
 			Result.copy (t)
 		end
-
 
 	declare_object (object_name: STRING_32; object_type: STRING_32): STRING_32
 			-- Declaration of all object references
@@ -337,16 +336,18 @@ feature
 	instantiate_container_object (object_name: STRING_32; type: STRING_32): STRING_32
 			-- Instantiate an object of container type based on the given counterexample model `m'
 		local
-			t, value: STRING_32
+			t, value, item_value: STRING_32
 			i: INTEGER
 		do
-			t := ""; Result := ""
+			t := ""; Result := ""; item_value := "0"
+
 			value := initial_values [object_name + ".sequence"]
 
 			if type.has_substring ("V_ARRAY") or type.has_substring ("SIMPLE_ARRAY") then
 					-- TODO: add support for other container type
 
 				if sequence_lengths.has (value) and sequence_items.count > 0 then
+
 					from
 						i := 1
 					until
@@ -354,10 +355,10 @@ feature
 					loop
 
 						if sequence_items.has (value + ", " + i.out) then
-							t := t + force_item (object_name, sequence_items [value + ", " + i.out], i)
-						else
-							t := t + force_item (object_name, "0", i)
+							item_value := sequence_items [value + ", " + i.out]
 						end
+
+						t := t + force_item (object_name, item_value, i)
 						i := i + 1
 					end
 				else
@@ -410,7 +411,7 @@ feature
 			Result.copy (t)
 		end
 
-feature -- Obtain initial values
+feature -- Get initial values
 
 	get_object_value (object_name: STRING_32; m: COUNTEREXAMPLE): STRING_32
 			-- Retrieve the value of `var' in the counterexample model `m'
@@ -452,7 +453,7 @@ feature -- Obtain initial values
 		end
 
 	get_object_initial_state (object_name: STRING_32; object_type: STRING_32; m: COUNTEREXAMPLE)
-	    -- Obtain the initial state of an object
+			-- Obtain the initial state of an object
 		local
 			object_value: STRING_32
 		do
@@ -485,13 +486,13 @@ feature -- Obtain initial values
 			end
 		end
 
-   	get_field_index
-   	    -- Obtain the index of an object field
+	get_field_index
+			-- Obtain the index of an object field
 		local
 			o: REFLECTED_REFERENCE_OBJECT
 		do
-			--TODO: arrange the order of object fields
-			-- create o.make (object_to_modify)
+				--TODO: arrange the order of object fields
+				-- create o.make (object_to_modify)
 				-- across 1 |..| o.field_count as i loop
 				-- `field_to_lookup` is in UTF-8 (ASCII is fine as well).
 				--    if o.field_name (i).same_string (field_to_lookup) then
@@ -500,7 +501,7 @@ feature -- Obtain initial values
 				-- end
 		end
 
-feature -- Checking properties
+feature -- Properties checking
 
 	is_aliased_with_existed_object (object_name: STRING_32): BOOLEAN
 			-- Is the given object an alias with one of the instantiated objects?
@@ -521,11 +522,11 @@ feature -- Checking properties
 			-- Is the given type a container type?
 		do
 			Result := False
-			if type.has_substring ("ARRAY") or type.has_substring ("SEQUENCE") or
-				type.has_substring ("LIST") or type.has_substring ("BAG") or
-				type.has_substring ("SET") or type.has_substring ("MAP") or
-				type.has_substring ("RELATION") or type.has_substring ("TABLE") or
-				type.has_substring ("INTERVAL") or type.has_substring ("TUPLE")
+			if type.has_substring ("V_ARRAY") or type.has_substring ("SIMPLE_ARRAY") or type.has_substring ("SEQUENCE") or
+				type.same_string ("LIST") or type.same_string ("BAG") or
+				type.same_string ("SET") or type.same_string ("MAP") or
+				type.same_string ("RELATION") or type.same_string ("TABLE") or
+				type.same_string ("INTERVAL") or type.same_string ("TUPLE")
 			then
 				Result := True
 			end
@@ -538,7 +539,7 @@ feature -- Checking properties
 		end
 
 	is_abstract_value (value: STRING_32): BOOLEAN
-	    -- Is the `value' an abstract value?
+			-- Is the `value' an abstract value?
 		do
 			Result := value.has_substring ("T@U")
 		end

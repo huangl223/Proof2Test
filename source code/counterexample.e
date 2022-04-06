@@ -38,7 +38,7 @@ feature {NONE} -- Initialization
 			get_routine_and_class_name
 		end
 
-feature
+feature  -- Colleted data
 
 	model_lines: LIST [STRING_32]
 			-- Model in lines
@@ -67,7 +67,7 @@ feature
 	seq_lengths: HASH_TABLE [IMMUTABLE_STRING_32, IMMUTABLE_STRING_32]
 			-- Sequences's lengths
 
-feature
+feature  -- Parse model 
 
 	safe_name (name: STRING_32): STRING_32
 			-- Get a valid name
@@ -177,6 +177,7 @@ feature
 				end_of_model_file or else model_lines [line_index].has_substring ("}")
 			loop
 				line.copy (model_lines [line_index])
+
 				words := line.split (' ')
 				if words [3].same_string ("else") then
 					key.copy ("else")
@@ -186,11 +187,22 @@ feature
 					end
 				elseif words.count >= 5 then
 					key.copy (words [3] + ", " + words [4])
-					value.copy (words [6])
-					if value.has_substring ("(") then
-						value.append (words [7])
+					if words [4].has ('(') then
+						key.append (words [5])
+						value.copy (words [7])
+						if value.has_substring ("(") then
+						    value.append (words [8])
+					    end
+					else
+					    value.copy (words [6])
+					    if value.has_substring ("(") then
+						    value.append (words [7])
+					    end
 					end
+
 				end
+
+
 				seq_item.extend (value, key)
 				read_next_line
 			end

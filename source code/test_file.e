@@ -294,12 +294,21 @@ feature -- Test generation
 					-- TODO: the counterexample is partial
 			end
 
-			field_type.to_lower
 
-			Result := "%T%T%T{INTERNAL}.set_" + field_type + "_field (" + i.out + ", " + object_name + ", " + value + ")%N"
-				+ ("%T%T%T%T--" + object_name + "." + field_name + " = " + value + "%N")
+			Result := "%T%T%T{P_INTERNAL}.set_" + safe_field_type(field_type) + "_field_ (%"" + field_name + "%", " + object_name + ", " + value + ")%N"
+				+ ("%T%T%T%T-- " + object_name + "." + field_name + " = " + value + "%N")
 
 		end
+
+    safe_field_type(field_type: STRING_32): STRING_32
+        -- Return the safe type of a data field
+    do
+       field_type.to_lower
+       Result := field_type
+       if field_type.has ('_') then
+          Result := field_type.split ('_').first
+       end
+    end
 
 	routine_call (class_name: STRING_32; routine_name: STRING_32): STRING_32
 			-- Invoke the call with initialized objects
@@ -486,20 +495,6 @@ feature -- Get initial values
 			end
 		end
 
-	get_field_index
-			-- Obtain the index of an object field
-		local
-			o: REFLECTED_REFERENCE_OBJECT
-		do
-				--TODO: arrange the order of object fields
-				-- create o.make (object_to_modify)
-				-- across 1 |..| o.field_count as i loop
-				-- `field_to_lookup` is in UTF-8 (ASCII is fine as well).
-				--    if o.field_name (i).same_string (field_to_lookup) then
-				--	    o.set_integer_field (i, o, new_field_value)
-				--    end
-				-- end
-		end
 
 feature -- Properties checking
 

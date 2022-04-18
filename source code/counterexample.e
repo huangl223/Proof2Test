@@ -67,7 +67,7 @@ feature  -- Colleted data
 	seq_lengths: HASH_TABLE [IMMUTABLE_STRING_32, IMMUTABLE_STRING_32]
 			-- Sequences's lengths
 
-feature  -- Parse model 
+feature  -- Parse model
 
 	safe_name (name: STRING_32): STRING_32
 			-- Get a valid name
@@ -202,8 +202,9 @@ feature  -- Parse model
 
 				end
 
-
-				seq_item.extend (value, key)
+				if not key.has ('-') and not key.same_string ("0")then -- exclude pairs with non-positive indexes
+		 		    seq_item.extend (value, key)
+				end
 				read_next_line
 			end
 		end

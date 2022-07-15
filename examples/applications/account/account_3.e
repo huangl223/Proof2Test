@@ -1,8 +1,12 @@
-﻿class
-	ACCOUNT_3
+﻿note
+    description: "[
+                    Failure 1: transfer, precondition amount <= 10 may be violated on call to deposit.
+                   ]"
+class
+    ACCOUNT_3
 
 create
-	make
+    make
 
 feature {NONE} -- Initialization
 
@@ -22,6 +26,7 @@ feature -- Access
 
 	balance: INTEGER
 			-- Balance of this account.
+
 	credit_limit: INTEGER
 			-- Credit limit of this account.
 
@@ -48,51 +53,46 @@ feature -- Basic operations
 		end
 
 	deposit (amount: INTEGER)
-			-- Deposit `amount� in this account.
+			-- Deposit `amount' in this account.
 		require
-			amount_non_negative: amount >= 0
+			amount >= 0
+			amount <= 10
 		do
 			balance := balance + amount
 		ensure
 			modify_field (["balance", "closed"], Current)
+			balance_increased: balance >= old balance
 			balance_set: balance = old balance + amount
 		end
 
 	withdraw (amount: INTEGER)
-			-- Withdraw `amount' from this bank account.
+			-- Withdraw `amount' from this account.
 		require
 			amount_not_negative: amount >= 0
-			-- amount_available: amount <= available_amount
+			amount_available: amount <= available_amount
 		do
-			-- unwrap
 			balance := balance - amount
-
 		ensure
 			modify_field (["balance", "closed"], Current)
 			balance_set: balance = old balance - amount
+			balance_decrease: balance <= old balance
 		end
 
-	transfer (amount: INTEGER; other: ACCOUNT)
+	transfer (amount: INTEGER; other: ACCOUNT_3)
 			-- Transfer `amount' from this account to `other'.
 		note
 			explicit: wrapping
 		require
-				-- @ amount = 1, other = Current, balance = 10,  available_amount = 1010
-			other /= Void
 			amount_not_negative: amount >= 0
 			amount_available: amount <= available_amount
-			not_alias: Current /= other
+			other /= Current
 		do
 			withdraw (amount)
-				-- @ balance = 9, other.balance = 9
 			other.deposit (amount)
-				-- @ balance = 10, other.balance = 10
 		ensure
 			modify_field (["balance", "closed"], [Current, other])
 			withdrawal_made: balance = old balance - amount
-				-- @ balance = 10, old balance = 10, amount = 1
-			desposit_made: other.balance = old other.balance + amount
-				-- @ other.balance = 10, old other.balance = 10, amount = 1
+			despoit_made: other.balance = old other.balance + amount
 		end
 
 invariant

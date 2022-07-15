@@ -1,11 +1,13 @@
 ﻿note
-	explicit: "all"
-
+    description: "[
+                    Failure 1: transfer, postcondition deposit_made may be violated, 
+                               due to the weakness of postcondition of deposit 
+                   ]"
 class
-	ACCOUNT_7
+    ACCOUNT_7
 
 create
-	make
+    make
 
 feature {NONE} -- Initialization
 
@@ -46,50 +48,41 @@ feature -- Basic operations
 		do
 			credit_limit := limit
 		ensure
-			modify_field (["credit_limit"], Current)
+			modify_field (["credit_limit", "closed"], Current)
 			credit_limit_set: credit_limit = limit
 		end
 
 	deposit (amount: INTEGER)
-			-- Deposit `amount� in this account.
+			-- Deposit `amount'in this account.
 		require
 			amount_non_negative: amount >= 0
-			balance >= credit_limit
-			0 >= credit_limit
 		do
 			balance := balance + amount
 		ensure
-			modify_field (["balance"], Current)
+			modify_field (["balance", "closed"], Current)
 			-- balance_set: balance = old balance + amount
-			balance >= credit_limit
-			0 >= credit_limit
 		end
 
 	withdraw (amount: INTEGER)
 			-- Withdraw `amount' from this bank account.
 		require
 			amount_not_negative: amount >= 0
-			balance >= credit_limit
-			0 >= credit_limit
-			amount <= available_amount
+			amount_available: amount <= available_amount
 		do
 			balance := balance - amount
 		ensure
-			modify_field (["balance"], Current)
+			modify_field (["balance", "closed"], Current)
 			balance_set: balance = old balance - amount
-			balance >= credit_limit
-			0 >= credit_limit
 		end
 
-	transfer (amount: INTEGER; other: ACCOUNT)
+	transfer (amount: INTEGER; other: ACCOUNT_7)
 			-- Transfer `amount' from this account to `other'.
 		note
 			explicit: wrapping
 		require
 			other /= Void
-			amount_not_negative: amount >= 0 and 0 >= credit_limit and 0 >= other.credit_limit
+			amount_not_negative: amount >= 0
 			amount_available: amount <= available_amount
-			balance_non_negative: balance >= credit_limit and other.balance >= other.credit_limit
 			not_alias: Current /= other
 		do
 			withdraw (amount)
@@ -100,8 +93,8 @@ feature -- Basic operations
 			desposit_made: other.balance = old other.balance + amount
 		end
 
--- invariant
-		-- credit_limit_not_positive: 0 >= credit_limit
-		-- balance_non_negative: balance >= credit_limit
+invariant
+	credit_limit_not_positive: 0 >= credit_limit
+	balance_non_negative: balance >= credit_limit
 
 end

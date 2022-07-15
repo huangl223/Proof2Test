@@ -1,13 +1,15 @@
 note
-	description: "Clock counting seconds, minutes, and hours."
-	model: hours, minutes, seconds
+    description: "[
+                    Failure 1: increase_hours, precondition valid_hours may be violated on call to set_hours.
+                   ]"
 
-	-- explicit: "all"
+	 model: hours, minutes, seconds
 
 class
 	CLOCK_1
 
-create make
+create
+	make
 
 feature {NONE} -- Initialization
 	make
@@ -79,7 +81,7 @@ feature -- Basic operations
 			explicit: wrapping
 
 		do
-			if hours = 23 then
+			if hours = 24 then
 				set_hours (0)
 			else
 				set_hours (hours + 1)
@@ -101,12 +103,12 @@ feature -- Basic operations
 					--	increase_hours
 			else
 				set_minutes (0)
-					--	increase_hours
+				increase_hours
 			end
 		ensure
-			hours_increased: old minutes = 59 implies hours = (old hours + 1) \\ 24
+		    hours_increased: old minutes = 59 implies hours = (old hours + 1) \\ 24
 			hours_unchanged: old minutes < 59 implies hours = old hours
-			minutes_increased: minutes = (old minutes + 1) \\ 60
+		    minutes_increased: minutes = (old minutes + 1) \\ 60
 			modify_model (["minutes", "hours"], Current)
 		end
 

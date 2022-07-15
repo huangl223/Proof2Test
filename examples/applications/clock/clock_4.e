@@ -1,13 +1,14 @@
 note
-	description: "Clock counting seconds, minutes, and hours."
-	model: hours, minutes, seconds
-
-	-- explicit: "all"
-
+    description: "[
+                    Failure 1: increase_minutes, postcondition minutes_increased may be violated;
+                                implementation is correct, but the postcondition of set_miniute is too-weak to establish the postcondition of increase_minutes.
+                   ]"
+    model: hours, minutes, seconds
 class
 	CLOCK_4
 
-create make
+create
+	make
 
 feature {NONE} -- Initialization
 	make
@@ -55,7 +56,7 @@ feature -- Element change
 		do
 			minutes := a_value
 		ensure
-			minutes_set: minutes = a_value
+				-- minutes_set: minutes = a_value
 			modify_model ("minutes", Current)
 		end
 
@@ -116,7 +117,7 @@ feature -- Basic operations
 			explicit: wrapping
 
 		do
-			if seconds > 59 then
+			if seconds >= 59 then
 				set_seconds (0)
 				increase_minutes
 			else

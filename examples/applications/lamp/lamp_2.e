@@ -1,6 +1,9 @@
 note
-	description: "This class implements a lamp that contains a dimmer. "
-
+    description: "[
+                    Failure 1: turn_on_off, postcondition lamp_is_turned_off may be violated;
+                               previous_light_intensity is not updated in the outer-most else-branch.
+                   ]"
+                   
 class
 	LAMP_2
 

@@ -1,9 +1,9 @@
 note
-	description: "Clock counting seconds, minutes, and hours."
+    description: "[
+                    Failure 1: increase_seconds, postcondition hours_increased may be violated;
+                               the postcondition of increase_minutes is too-weak to establish the postcondition of increase_seconds.
+                   ]"
 	model: hours, minutes, seconds
-
-	-- explicit: "all"
-
 class
 	CLOCK_6
 
@@ -12,8 +12,6 @@ create
 
 feature {NONE} -- Initialization
 	make
-			--require
-			--   is_open
 		note
 			status: creator
 		do
@@ -105,8 +103,8 @@ feature -- Basic operations
 				increase_hours
 			end
 		ensure
-		    hours_increased: old minutes = 59 implies hours = (old hours + 1) \\ 24
-			-- hours_unchanged: old minutes < 59 implies hours = old hours
+				-- hours_increased: old minutes = 59 implies hours = (old hours + 1) \\ 24
+			hours_unchanged: old minutes < 59 implies hours = old hours
 			minutes_increased: minutes = (old minutes + 1) \\ 60
 			modify_model (["minutes", "hours"], Current)
 		end

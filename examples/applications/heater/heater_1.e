@@ -1,5 +1,7 @@
 note
-	description: "This class implements a heater that is turned on/off automatically based on the relation between user-defined temperature and current temperature."
+    description: "[
+                    Failure 1: turn_on_off, postcondition heater_remains_off may be violated.
+                   ]"
 
 class
 	HEATER_1
@@ -32,6 +34,12 @@ feature
 			-- Deviation for turning on/off the heater
 
 feature
+
+	set_temperature (a_value: INTEGER)
+			-- Set the `temperature' to `a_value'
+		do
+			temperature := a_value
+		end
 
 	set_desired_temperature (value: INTEGER)
 			-- Set the `desired_temp' to `value'

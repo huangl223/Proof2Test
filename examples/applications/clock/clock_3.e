@@ -1,8 +1,10 @@
 note
-	description: "Clock counting seconds, minutes, and hours."
+    description: "[
+                    Failure 1: increase_minutes, postcondition hours_increased may be violated.
+    				            the postcondition of increase_hours is too-weak to establish the postcondition of increase_miniute
+				   ]"
+                   
 	model: hours, minutes, seconds
-
-	-- explicit: "all"
 
 class
 	CLOCK_3
@@ -56,7 +58,7 @@ feature -- Element change
 		do
 			minutes := a_value
 		ensure
-			-- minutes_set: minutes = a_value
+			minutes_set: minutes = a_value
 			modify_model ("minutes", Current)
 		end
 
@@ -86,7 +88,7 @@ feature -- Basic operations
 				set_hours (hours + 1)
 			end
 		ensure
-			hours_increased: hours = (old hours + 1) \\ 24
+				-- hours_increased: hours = (old hours + 1) \\ 24
 			modify_model ("hours", Current)
 		end
 
@@ -94,7 +96,6 @@ feature -- Basic operations
 			-- Increase `minutes' by one.
 		note
 			explicit: wrapping
-
 		do
 			if minutes < 59 then
 				set_minutes (minutes + 1)

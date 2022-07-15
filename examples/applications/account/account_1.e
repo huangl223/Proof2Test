@@ -1,6 +1,7 @@
-﻿ note
-	explicit: "all"
-
+﻿note
+    description: "[
+                    Failure 1: withdraw, violation of postcondition balance_set
+                   ]"
 class
 	ACCOUNT_1
 
@@ -25,6 +26,7 @@ feature -- Access
 
 	balance: INTEGER
 			-- Balance of this account.
+
 	credit_limit: INTEGER
 			-- Credit limit of this account.
 
@@ -46,56 +48,51 @@ feature -- Basic operations
 		do
 			credit_limit := limit
 		ensure
-			modify_field (["credit_limit"], Current)
+			modify_field (["credit_limit", "closed"], Current)
 			credit_limit_set: credit_limit = limit
 		end
 
 	deposit (amount: INTEGER)
-			-- Deposit `amount� in this account.
+			-- Deposit `amount' in this account.
 		require
-			amount_non_negative: amount >= 0
+			amount >= 0
+			-- amount <= 10
 		do
 			balance := balance + amount
 		ensure
-			modify_field (["balance"], Current)
+			modify_field (["balance", "closed"], Current)
+			balance_increased: balance >= old balance
 			balance_set: balance = old balance + amount
 		end
 
 	withdraw (amount: INTEGER)
-			-- Withdraw `amount' from this bank account.
+			-- Withdraw `amount' from this account.
 		require
 			amount_not_negative: amount >= 0
-			-- @ amount -> 1, balance -> 10
+			amount_available: amount <= available_amount
 		do
-			balance := balance + amount
-				-- @ balance -> 11
+			balance := balance - amount
 		ensure
-			modify_field (["balance"], Current)
-				-- @ balance -> 11, old balance -> 10, amount -> 1
-			balance_set: balance = old balance - amount
+			modify_field (["balance", "closed"], Current)
+			balance_set: balance = old balance + amount
+			balance_decrease: balance <= old balance
 		end
 
-	transfer (amount: INTEGER; other: ACCOUNT)
+	transfer (amount: INTEGER; other: ACCOUNT_1)
 			-- Transfer `amount' from this account to `other'.
 		note
 			explicit: wrapping
 		require
-				-- @ amount -> 1, other -> Current, balance -> 10,  available_amount -> 1010
-			other /= Void
 			amount_not_negative: amount >= 0
 			amount_available: amount <= available_amount
-			not_alias: Current /= other
+			other /= Current
 		do
 			withdraw (amount)
-				-- @ balance -> 9, other.balance -> 9
 			other.deposit (amount)
-				-- @ balance -> 10, other.balance -> 10
 		ensure
 			modify_field (["balance", "closed"], [Current, other])
 			withdrawal_made: balance = old balance - amount
-				-- @ balance -> 10, old balance -> 10, amount -> 1
-			desposit_made: other.balance = old other.balance + amount
-				-- @ other.balance -> 10, old other.balance -> 10, amount -> 1
+			despoit_made: other.balance = old other.balance + amount
 		end
 
 invariant

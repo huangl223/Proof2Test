@@ -1,19 +1,18 @@
 note
-	description: "Clock counting seconds, minutes, and hours."
+    description: "[
+                    Failure 1: increase_minutes, postcondition hours_increased may be violated, 
+					           due to incorrect implementation of increase_minutes; 
+							   a call to increase_hour should be included in the else branch. 
+                   ]"
 	model: hours, minutes, seconds
-
-	-- explicit: "all"
 
 class
 	CLOCK_2
 
-create
-	make
+create make
 
 feature {NONE} -- Initialization
 	make
-			--require
-			--   is_open
 		note
 			status: creator
 		do
@@ -86,7 +85,7 @@ feature -- Basic operations
 				set_hours (hours + 1)
 			end
 		ensure
-				-- hours_increased: hours = (old hours + 1) \\ 24
+			hours_increased: hours = (old hours + 1) \\ 24
 			modify_model ("hours", Current)
 		end
 
@@ -94,7 +93,6 @@ feature -- Basic operations
 			-- Increase `minutes' by one.
 		note
 			explicit: wrapping
-
 		do
 			if minutes < 59 then
 				set_minutes (minutes + 1)
@@ -102,7 +100,7 @@ feature -- Basic operations
 					--	increase_hours
 			else
 				set_minutes (0)
-				increase_hours
+					--	increase_hours
 			end
 		ensure
 			hours_increased: old minutes = 59 implies hours = (old hours + 1) \\ 24

@@ -1,5 +1,8 @@
 ﻿note
-	explicit: "all"
+    description: "[
+                    Failure 1: deposit, invariant balance_non_negative might not hold at the end of the execution
+                    Failure 2: deposit, balance_set may be violated
+                   ]"
 
 class
 	ACCOUNT_4
@@ -25,6 +28,7 @@ feature -- Access
 
 	balance: INTEGER
 			-- Balance of this account.
+
 	credit_limit: INTEGER
 			-- Credit limit of this account.
 
@@ -46,34 +50,35 @@ feature -- Basic operations
 		do
 			credit_limit := limit
 		ensure
-			modify_field (["credit_limit"], Current)
+			modify_field (["credit_limit", "closed"], Current)
 			credit_limit_set: credit_limit = limit
 		end
 
 	deposit (amount: INTEGER)
-			-- Deposit `amount� in this account.
+			-- Deposit `amount' in this account.
 		require
 			amount_non_negative: amount >= 0
 		do
 			balance := balance - amount
 		ensure
-			modify_field (["balance"], Current)
+			modify_field (["balance", "closed"], Current)
 			balance_set: balance = old balance + amount
 		end
 
 	withdraw (amount: INTEGER)
 			-- Withdraw `amount' from this bank account.
 		require
-			amount_not_negative: amount >= 0 and balance >= credit_limit
-			0 >= credit_limit
+			amount_not_negative: amount >= 0
+			amount_available: amount <= available_amount
 		do
 			balance := balance - amount
 		ensure
-			modify_field (["balance"], Current)
+			modify_field (["balance", "closed"], Current)
 			balance_set: balance = old balance - amount
+			balance_decrease: balance <= old balance
 		end
 
-	transfer (amount: INTEGER; other: ACCOUNT)
+	transfer (amount: INTEGER; other: ACCOUNT_4)
 			-- Transfer `amount' from this account to `other'.
 		note
 			explicit: wrapping

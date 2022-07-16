@@ -1,5 +1,7 @@
 note
-	description: "Algorithm to find the maximum value of an array."
+    description: "[   Loop invariant max_so_far may not be maintained;
+                      incorrect implementation (conditional statement of the if branch) of the loop body.
+                  ]"
 
 class
 	MAX_IN_ARRAY_1
@@ -10,11 +12,12 @@ feature -- Basic operations
 			-- Find the maximum element of `a'.
 		require
 			a_element_value: across 1 |..| a.count as c all -2 <= a.sequence [c] and a.sequence [c] <= 10 end
-			array_not_empty: a.count > 0 and a.count <= 3
+			array_not_empty: a.count > 0 
 		local
 			i: INTEGER
 		do
 			Result := a [1]
+
 			from
 				i := 2
 			invariant

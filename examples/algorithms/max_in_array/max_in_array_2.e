@@ -1,5 +1,5 @@
 note
-	description: "Algorithm to find the maximum value of an array."
+    description: "[ Postcondition is_maximum may be violated, due to weakness of loop invariant, insufficient to establish postcondition. ]"
 
 class
 	MAX_IN_ARRAY_2
@@ -10,7 +10,7 @@ feature -- Basic operations
 			-- Find the maximum element of `a'.
 		require
 			a_element_value: across 1 |..| a.count as c all -2 <= a.sequence [c] and a.sequence [c] <= 10 end
-			array_not_empty: a.count > 0 and a.count <= 3
+			array_not_empty: a.count > 0 
 		local
 			i: INTEGER
 		do

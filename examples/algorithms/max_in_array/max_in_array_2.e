@@ -9,7 +9,6 @@ feature -- Basic operations
 	max_in_array (a: SIMPLE_ARRAY [INTEGER]): INTEGER
 			-- Find the maximum element of `a'.
 		require
-			a_element_value: across 1 |..| a.count as c all -2 <= a.sequence [c] and a.sequence [c] <= 10 end
 			array_not_empty: a.count > 0 
 		local
 			i: INTEGER

@@ -1,6 +1,7 @@
 note
-	description: "Binary search on integer arrays with both iterative and recursive versions."
-	explicit: "all"
+    description: "[
+                    Variant may not decrease at this recursive call / the end of this loop body.
+                   ]"
 
 class
 	BINARY_SEARCH_3
@@ -17,7 +18,7 @@ feature -- Binary search
 			a_sorted: across 1 |..| a.count as i all
 						across 1 |..| a.count as j all
 							i <= j implies a.sequence[i] <= a.sequence[j] end end
-			a_size_limit: a.count > 0 and a.count <= 3
+			a_size_limit: a.count > 0 
 			a_valid_bound: a.lower < a.upper and a.lower = 1
 
 		local

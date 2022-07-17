@@ -1,5 +1,7 @@
 ﻿note
-	description: "Algorithm to calculate sum and maximum of an integer array."
+    description: "[
+	                Postcondition is_maximum may be violated.
+				  ]"
 
 class
 	SUM_AND_MAX_1
@@ -10,7 +12,7 @@ feature
 			-- Calculate sum and maximum of array `a'.
 		require
 			a_not_void: a /= Void
-			natural_numbers: ∀ ai: 1 |..| a.count ¦ a.sequence [ai] >= 0
+			natural_numbers: across 1 |..| a.count as ai all a.sequence [ai] >= 0 end
 			-- array_not_empty: a.count > 0
 		local
 			i: INTEGER
@@ -37,7 +39,7 @@ feature
 			Result := [sum, max]
 		ensure
 			sum_in_range: Result.sum <= a.count * Result.max
-			is_maximum: ∀ ai: 1 |..| a.count ¦ Result.max >= a.sequence [ai]
+			is_maximum: across 1 |..| a.count as ai all Result.max >= a.sequence [ai] end
 			modify()
 		end
 

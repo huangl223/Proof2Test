@@ -1,5 +1,7 @@
 note
-	description: "Calculate the integer approximation of the square root of an positive integer."
+    description: "[
+                    Variant may not decrease at this recursive call / the end of this loop body.
+                  ]"
 
 class
 	SQUARE_ROOT_1

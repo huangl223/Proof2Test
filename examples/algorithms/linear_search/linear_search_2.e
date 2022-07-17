@@ -1,6 +1,6 @@
 note
 	description: "Linear search in integer arrays."
-
+    -- Bug: the loop invariant is too-weak to establish postcondition
 class
 	LINEAR_SEARCH_2
 
@@ -15,9 +15,9 @@ feature -- Basic operations
 				Result := 1
 			invariant
 				result_in_bound: 1 <= Result and Result <= a.count + 1
-				not_present_so_far: across 1 |..| (Result - 1) as i all a.sequence [i] /= value end
+				-- not_present_so_far: across 1 |..| (Result - 1) as i all a.sequence[i] /= value end
 			until
-				Result = a.count or else a [Result] = value
+				Result = a.count + 1 or else a [Result] = value
 			loop
 				Result := Result + 1
 			variant
@@ -25,9 +25,9 @@ feature -- Basic operations
 			end
 		ensure
 			result_in_bound: 1 <= Result and Result <= a.count + 1
-				-- present: a.sequence.has (value) = (Result <= a.count)
-				-- found_if_present: (Result <= a.count) implies a.sequence [Result] = value
-			first_from_front: across 1 |..| (Result - 1) as i all a.sequence [i] /= value end
+			present: a.sequence.has (value) = (Result <= a.count)
+			found_if_present: (Result <= a.count) implies a.sequence [Result] = value
+				-- first_from_front: across 1 |..| (Result - 1) as i all a.sequence[i] /= value end
 		end
 
 end

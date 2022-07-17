@@ -1,5 +1,7 @@
 ﻿note
-	description: "Algorithm to calculate sum and maximum of an integer array."
+	description: "[
+	               Loop invariant sum_and_max_not_negative may not be maintained.
+				   ]"
 
 class
 	SUM_AND_MAX_5
@@ -10,7 +12,7 @@ feature
 			-- Calculate sum and maximum of array `a'.
 		require
 			a_not_void: a /= Void
-			-- natural_numbers: ∀ ai: 1 |..| a.count ¦ a.sequence [ai] >= 0
+			-- natural_numbers: across 1 |..| a.count as ai all a.sequence [ai] >= 0 end
 			-- array_not_empty: a.count > 0
 		local
 			i: INTEGER
@@ -23,7 +25,7 @@ feature
 				i_in_range: 1 <= i and i <= a.count + 1
 				sum_and_max_not_negative: sum >= 0 and max >= 0
 				partial_sum_and_max: sum <= (i - 1) * max
-				max_so_far: ∀ ai: 1 |..| (i - 1) ¦ max >= a.sequence [ai]
+				max_so_far: across 1 |..| (i - 1) as ai all max >= a.sequence [ai] end
 
 			until
 				i > a.count
@@ -37,7 +39,7 @@ feature
 			Result := [sum, max]
 		ensure
 			sum_in_range: Result.sum <= a.count * Result.max
-			is_maximum: ∀ ai: 1 |..| a.count ¦ Result.max >= a.sequence [ai]
+			is_maximum: across 1 |..| a.count as ai all Result.max >= a.sequence [ai] end
 			modify()
 		end
 

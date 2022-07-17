@@ -1,5 +1,7 @@
 note
-	description: "Calculate the integer approximation of the square root of an positive integer."
+    description: "[
+                  Postcondition valid_result may be violated.
+                  ]"
 
 class
 	SQUARE_ROOT_2

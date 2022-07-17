@@ -6,28 +6,38 @@ class
 
 feature -- Basic operations
 
-	linear_search (a: SIMPLE_ARRAY [INTEGER]; value: INTEGER): INTEGER
+	linear_search (a: V_ARRAY [INTEGER]; value: INTEGER): INTEGER
 			-- Index of `value' in `a' using linear search starting from end of array.
+			-- https://en.wikipedia.org/wiki/Linear_search#Searching_in_reverse_order
 		require
-			array_size: 2 <= a.count and a.count <= 10
+			a_not_empty: a.count > 0
+			a_size_limit: a.count <= 3
+			valid_index: a.lower < a.upper
+			a_element_value: across 1 |..| a.count as c all 0 <= a.sequence[c] and a.sequence[c] <= 10 end
+			-- @ a -> <<10>>, value -> 9
 		do
 			from
-				Result := 1
+				Result := a.upper
+				--  @ Result -> 1
 			invariant
-				result_in_bound: 1 <= Result and Result <= a.count + 1
-				-- not_present_so_far: across 1 |..| (Result - 1) as i all a.sequence[i] /= value end
+
+				across (Result - a.lower + 2) |..| a.count as i all a.sequence[i] /= value end
+				-- @ 1 st iteration: Result -> 1, a -> <<10>>, a.count -> 1, value -> 9
 			until
-				Result = a.count + 1 or else a [Result] = value
+				Result = a.lower  or else a[Result] = value
+				-- @ Result -> 1, a -> <<10>>, value -> 9, iteration ends
 			loop
-				Result := Result + 1
+				Result := Result - 1
 			variant
-				a.count - Result + 1
+				Result - a.lower
 			end
 		ensure
-			result_in_bound: 1 <= Result and Result <= a.count + 1
-			present: a.sequence.has (value) = (Result <= a.count)
-			found_if_present: (Result <= a.count) implies a.sequence [Result] = value
-				-- first_from_front: across 1 |..| (Result - 1) as i all a.sequence[i] /= value end
+			-- @ a -> <<10>>, value -> 9, Result -> 1
+			present: a.sequence.has (value) = (Result >= a.lower and Result <= a.upper)
+			not_present: not a.sequence.has (value) = (Result = a.lower - 1)
+			found_if_present: (Result >= a.lower and Result <= a.upper) implies a.sequence[Result - a.lower + 1] = value
+			first_from_back: across (Result - a.lower + 2) |..| a.count as i all a.sequence[i] /= value end
+
 		end
 
 end

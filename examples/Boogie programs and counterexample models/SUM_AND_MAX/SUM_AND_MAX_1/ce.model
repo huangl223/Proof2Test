@@ -1,0 +1,1402 @@
+*** MODEL
+a@@117 -> T@U!val!21
+allocated -> T@U!val!16
+ANY -> T@U!val!0
+BOOLEAN -> T@U!val!3
+boolType -> T@T!val!2
+boxed_false -> T@U!val!5
+boxed_true -> T@U!val!4
+call2formal@result@0 -> T@U!val!25
+call3formal@Result -> 0
+call3formal@Result@@0 -> 0
+call3formal@Result@@1 -> 0
+call3formal@Result@0 -> 0
+call3formal@Result@0@@0 -> 0
+call3formal@Result@0@@1 -> 0
+closed -> T@U!val!19
+Current -> T@U!val!33
+Heap -> T@U!val!32
+Heap@0 -> T@U!val!23
+Heap@1 -> T@U!val!31
+Heap@2 -> T@U!val!24
+Heap@3 -> T@U!val!27
+Heap@4 -> T@U!val!22
+Heap@5 -> T@U!val!28
+Heap@6 -> T@U!val!30
+Heap@7 -> T@U!val!27
+i_2@@1!423!48 -> 1
+INTEGER -> T@U!val!2
+intType -> T@T!val!0
+ITERABLE^INTEGER_32^ -> T@U!val!9
+local1 -> 0
+local1@0 -> 2
+local1@1 -> 0
+local2 -> 0
+local2@0 -> 1
+local2@1 -> 0
+local3 -> 0
+local3@0 -> 1
+local3@1 -> 0
+NONE -> T@U!val!1
+observers -> T@U!val!18
+owner -> T@U!val!20
+owns -> T@U!val!13
+PreLoopHeap_8 -> 
+readable -> T@U!val!26
+realType -> T@T!val!1
+refType -> T@T!val!7
+regexType -> T@T!val!5
+Result -> T@U!val!34
+Result@0 -> T@U!val!25
+rmodeType -> T@T!val!3
+SIMPLE_ARRAY^INTEGER_32^ -> T@U!val!7
+SIMPLE_ARRAY^INTEGER_32^.sequence -> T@U!val!12
+stringType -> T@T!val!4
+subjects -> T@U!val!17
+SUM_AND_MAX_1 -> T@U!val!6
+temp_10 -> 
+temp_11 -> 
+temp_12 -> 
+temp_13 -> 
+TUPLE^INTEGER_32#INTEGER_32^ -> T@U!val!8
+TUPLE^INTEGER_32#INTEGER_32^.field_1 -> T@U!val!10
+TUPLE^INTEGER_32#INTEGER_32^.field_2 -> T@U!val!11
+TypeType -> T@T!val!6
+universe -> T@U!val!14
+variant_9 -> 
+variant_9@1 -> 0
+Void -> T@U!val!15
+writable -> T@U!val!29
+abs_real -> {
+  else -> 0.0
+}
+add -> {
+  else -> 0
+}
+attached -> {
+  T@U!val!27 T@U!val!25 T@U!val!6 -> false
+  T@U!val!32 T@U!val!34 T@U!val!8 -> true
+  else -> true
+}
+attached_exact -> {
+  T@U!val!32 T@U!val!21 T@U!val!7 -> true
+  T@U!val!32 T@U!val!33 T@U!val!6 -> true
+  T@U!val!32 T@U!val!33 T@U!val!7 -> false
+  else -> true
+}
+Bag#Card -> {
+  else -> 0
+}
+Bag#Difference -> {
+  else -> T@U!val!60
+}
+Bag#Disjoint -> {
+  else -> false
+}
+Bag#Domain -> {
+  else -> T@U!val!60
+}
+Bag#Empty -> {
+  T@T!val!0 -> T@U!val!60
+  else -> T@U!val!60
+}
+Bag#Equal -> {
+  else -> false
+}
+Bag#Extended -> {
+  else -> T@U!val!60
+}
+Bag#ExtendedMultiple -> {
+  else -> T@U!val!60
+}
+Bag#FromSet -> {
+  else -> T@U!val!60
+}
+Bag#Intersection -> {
+  else -> T@U!val!60
+}
+Bag#IsConstant -> {
+  else -> false
+}
+Bag#IsValid -> {
+  T@U!val!60 -> true
+  else -> true
+}
+Bag#Multiple -> {
+  else -> T@U!val!60
+}
+Bag#Removed -> {
+  else -> T@U!val!60
+}
+Bag#RemovedAll -> {
+  else -> T@U!val!60
+}
+Bag#RemovedMultiple -> {
+  else -> T@U!val!60
+}
+Bag#Restricted -> {
+  else -> T@U!val!60
+}
+Bag#Singleton -> {
+  else -> T@U!val!60
+}
+Bag#Subset -> {
+  else -> false
+}
+Bag#Union -> {
+  else -> T@U!val!60
+}
+bool_2_U -> {
+  false -> false
+  true -> true
+  else -> true
+}
+boxed_bool -> {
+  false -> T@U!val!5
+  true -> T@U!val!4
+  else -> T@U!val!5
+}
+boxed_int -> {
+  else -> T@U!val!60
+}
+ControlFlow -> {
+  0 0 -> 48
+  0 2 -> (- 1)
+  0 37 -> 8
+  0 38 -> 37
+  0 48 -> 38
+  0 8 -> 2
+  else -> 37
+}
+Ctor -> {
+  T@T!val!0 -> 0
+  T@T!val!1 -> 1
+  T@T!val!10 -> 8
+  T@T!val!11 -> 8
+  T@T!val!12 -> 8
+  T@T!val!13 -> 8
+  T@T!val!14 -> 11
+  T@T!val!15 -> 10
+  T@T!val!16 -> 15
+  T@T!val!2 -> 2
+  T@T!val!20 -> 8
+  T@T!val!23 -> 13
+  T@T!val!24 -> 8
+  T@T!val!27 -> 12
+  T@T!val!28 -> 8
+  T@T!val!3 -> 3
+  T@T!val!30 -> 11
+  T@T!val!31 -> 8
+  T@T!val!32 -> 11
+  T@T!val!33 -> 8
+  T@T!val!36 -> 13
+  T@T!val!37 -> 8
+  T@T!val!4 -> 4
+  T@T!val!40 -> 12
+  T@T!val!41 -> 8
+  T@T!val!42 -> 11
+  T@T!val!43 -> 8
+  T@T!val!45 -> 9
+  T@T!val!46 -> 8
+  T@T!val!49 -> 13
+  T@T!val!5 -> 5
+  T@T!val!50 -> 8
+  T@T!val!53 -> 12
+  T@T!val!54 -> 8
+  T@T!val!56 -> 11
+  T@T!val!57 -> 8
+  T@T!val!59 -> 9
+  T@T!val!6 -> 6
+  T@T!val!60 -> 8
+  T@T!val!61 -> 11
+  T@T!val!62 -> 8
+  T@T!val!65 -> 13
+  T@T!val!66 -> 8
+  T@T!val!69 -> 12
+  T@T!val!7 -> 7
+  T@T!val!70 -> 8
+  T@T!val!72 -> 11
+  T@T!val!73 -> 8
+  T@T!val!75 -> 9
+  T@T!val!76 -> 8
+  T@T!val!77 -> 11
+  T@T!val!78 -> 8
+  T@T!val!8 -> 8
+  T@T!val!81 -> 13
+  T@T!val!82 -> 8
+  T@T!val!85 -> 12
+  T@T!val!86 -> 8
+  T@T!val!88 -> 11
+  T@T!val!89 -> 8
+  T@T!val!9 -> 9
+  T@T!val!91 -> 9
+  T@T!val!92 -> 8
+  T@T!val!93 -> 11
+  T@T!val!94 -> 8
+  T@T!val!95 -> 11
+  else -> 8
+}
+Default -> {
+  T@U!val!10 -> 0
+  T@U!val!11 -> 0
+  T@U!val!12 -> false
+  T@U!val!13 -> false
+  T@U!val!17 -> false
+  T@U!val!18 -> false
+  T@U!val!19 -> false
+  T@U!val!20 -> T@U!val!15
+  else -> false
+}
+detachable -> {
+  else -> false
+}
+detachable_exact -> {
+  else -> false
+}
+divide -> {
+  else -> 0
+}
+domain -> {
+  else -> T@U!val!60
+}
+FieldId -> {
+  T@U!val!10 T@U!val!8 -> 1
+  T@U!val!11 T@U!val!8 -> 2
+  T@U!val!12 T@U!val!7 -> 82
+  T@U!val!13 T@U!val!6 -> (- 4)
+  T@U!val!13 T@U!val!7 -> (- 4)
+  T@U!val!13 T@U!val!8 -> (- 4)
+  T@U!val!13 T@U!val!9 -> (- 4)
+  T@U!val!16 T@U!val!6 -> (- 1)
+  T@U!val!16 T@U!val!7 -> (- 1)
+  T@U!val!16 T@U!val!8 -> (- 1)
+  T@U!val!16 T@U!val!9 -> (- 1)
+  T@U!val!17 T@U!val!6 -> (- 6)
+  T@U!val!17 T@U!val!7 -> (- 6)
+  T@U!val!17 T@U!val!8 -> (- 6)
+  T@U!val!17 T@U!val!9 -> (- 6)
+  T@U!val!18 T@U!val!6 -> (- 5)
+  T@U!val!18 T@U!val!7 -> (- 5)
+  T@U!val!18 T@U!val!8 -> (- 5)
+  T@U!val!18 T@U!val!9 -> (- 5)
+  T@U!val!19 T@U!val!6 -> (- 2)
+  T@U!val!19 T@U!val!7 -> (- 2)
+  T@U!val!19 T@U!val!8 -> (- 2)
+  T@U!val!19 T@U!val!9 -> (- 2)
+  T@U!val!20 T@U!val!6 -> (- 3)
+  T@U!val!20 T@U!val!7 -> (- 3)
+  T@U!val!20 T@U!val!8 -> (- 3)
+  T@U!val!20 T@U!val!9 -> (- 3)
+  else -> (- 1)
+}
+FieldType -> {
+  T@T!val!0 -> T@T!val!8
+  T@T!val!1 -> T@T!val!20
+  T@T!val!14 -> T@T!val!11
+  T@T!val!2 -> T@T!val!12
+  T@T!val!23 -> T@T!val!24
+  T@T!val!27 -> T@T!val!28
+  T@T!val!30 -> T@T!val!31
+  T@T!val!32 -> T@T!val!33
+  T@T!val!36 -> T@T!val!37
+  T@T!val!40 -> T@T!val!41
+  T@T!val!42 -> T@T!val!43
+  T@T!val!45 -> T@T!val!46
+  T@T!val!49 -> T@T!val!50
+  T@T!val!53 -> T@T!val!54
+  T@T!val!56 -> T@T!val!57
+  T@T!val!59 -> T@T!val!60
+  T@T!val!61 -> T@T!val!62
+  T@T!val!65 -> T@T!val!66
+  T@T!val!69 -> T@T!val!70
+  T@T!val!7 -> T@T!val!13
+  T@T!val!72 -> T@T!val!73
+  T@T!val!75 -> T@T!val!76
+  T@T!val!77 -> T@T!val!78
+  T@T!val!81 -> T@T!val!82
+  T@T!val!85 -> T@T!val!86
+  T@T!val!88 -> T@T!val!89
+  T@T!val!9 -> T@T!val!10
+  T@T!val!91 -> T@T!val!92
+  T@T!val!93 -> T@T!val!94
+  else -> T@T!val!8
+}
+FieldTypeInv0 -> {
+  T@T!val!10 -> T@T!val!9
+  T@T!val!11 -> T@T!val!14
+  T@T!val!12 -> T@T!val!2
+  T@T!val!13 -> T@T!val!7
+  T@T!val!20 -> T@T!val!1
+  T@T!val!24 -> T@T!val!23
+  T@T!val!28 -> T@T!val!27
+  T@T!val!31 -> T@T!val!30
+  T@T!val!33 -> T@T!val!32
+  T@T!val!37 -> T@T!val!36
+  T@T!val!41 -> T@T!val!40
+  T@T!val!43 -> T@T!val!42
+  T@T!val!46 -> T@T!val!45
+  T@T!val!50 -> T@T!val!49
+  T@T!val!54 -> T@T!val!53
+  T@T!val!57 -> T@T!val!56
+  T@T!val!60 -> T@T!val!59
+  T@T!val!62 -> T@T!val!61
+  T@T!val!66 -> T@T!val!65
+  T@T!val!70 -> T@T!val!69
+  T@T!val!73 -> T@T!val!72
+  T@T!val!76 -> T@T!val!75
+  T@T!val!78 -> T@T!val!77
+  T@T!val!8 -> T@T!val!0
+  T@T!val!82 -> T@T!val!81
+  T@T!val!86 -> T@T!val!85
+  T@T!val!89 -> T@T!val!88
+  T@T!val!92 -> T@T!val!91
+  T@T!val!94 -> T@T!val!93
+  else -> T@T!val!0
+}
+Frame#Singleton -> {
+  T@U!val!25 -> T@U!val!53
+  else -> T@U!val!53
+}
+Frame#Subset -> {
+  T@U!val!35 T@U!val!26 -> true
+  T@U!val!36 T@U!val!26 -> true
+  T@U!val!37 T@U!val!26 -> true
+  T@U!val!38 T@U!val!29 -> true
+  T@U!val!43 T@U!val!29 -> true
+  T@U!val!44 T@U!val!26 -> true
+  else -> true
+}
+fun.ANY.in_observers -> {
+  else -> false
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!23 T@U!val!21 -> 1
+  T@U!val!27 T@U!val!21 -> 1
+  T@U!val!27 T@U!val!25 -> 1
+  T@U!val!32 T@U!val!21 -> 1
+  T@U!val!32 T@U!val!33 -> 1
+  else -> 1
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  else -> 0
+}
+fun.SUM_AND_MAX_1.in_observers -> {
+  else -> false
+}
+fun.SUM_AND_MAX_1.sum_and_max -> {
+  else -> T@U!val!60
+}
+fun.TUPLE^INTEGER_32#INTEGER_32^.in_observers -> {
+  else -> false
+}
+fun0.ANY.in_observers -> {
+  else -> false
+}
+fun0.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!23 T@U!val!21 -> 1
+  T@U!val!27 T@U!val!21 -> 1
+  T@U!val!27 T@U!val!25 -> 1
+  T@U!val!32 T@U!val!21 -> 1
+  T@U!val!32 T@U!val!33 -> 1
+  else -> 1
+}
+fun0.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+fun0.SUM_AND_MAX_1.in_observers -> {
+  else -> false
+}
+fun0.TUPLE^INTEGER_32#INTEGER_32^.in_observers -> {
+  else -> false
+}
+guard -> {
+  else -> false
+}
+has_whole_object -> {
+  T@U!val!29 T@U!val!25 -> true
+  else -> true
+}
+HeapSucc -> {
+  T@U!val!23 T@U!val!24 -> true
+  T@U!val!23 T@U!val!27 -> true
+  T@U!val!24 T@U!val!27 -> true
+  T@U!val!32 T@U!val!23 -> true
+  T@U!val!32 T@U!val!24 -> true
+  T@U!val!32 T@U!val!27 -> true
+  else -> true
+}
+in_domain -> {
+  T@U!val!23 T@U!val!52 T@U!val!21 -> false
+  T@U!val!24 T@U!val!57 T@U!val!25 -> false
+  else -> false
+}
+in_trans_owns -> {
+  else -> false
+}
+int_2_U -> {
+  0 -> 0
+  1 -> 1
+  2 -> 2
+  else -> 1
+}
+int_to_integer_16 -> {
+  else -> 0
+}
+int_to_integer_32 -> {
+  else -> 0
+}
+int_to_integer_64 -> {
+  else -> 0
+}
+int_to_integer_8 -> {
+  else -> 0
+}
+int_to_natural_16 -> {
+  else -> 0
+}
+int_to_natural_32 -> {
+  else -> 0
+}
+int_to_natural_64 -> {
+  else -> 0
+}
+int_to_natural_8 -> {
+  else -> 0
+}
+Interval#FromRange -> {
+  else -> T@U!val!60
+}
+inv_frame_trigger -> {
+  else -> false
+}
+is_closed -> {
+  T@U!val!32 T@U!val!21 -> true
+  T@U!val!32 T@U!val!33 -> true
+  else -> true
+}
+is_frozen -> {
+  T@U!val!7 -> true
+  else -> true
+}
+is_integer_16 -> {
+  else -> false
+}
+is_integer_32 -> {
+  0 -> true
+  1 -> true
+  2 -> true
+  else -> true
+}
+is_integer_64 -> {
+  else -> false
+}
+is_integer_8 -> {
+  else -> false
+}
+is_natural -> {
+  else -> false
+}
+is_natural_16 -> {
+  else -> false
+}
+is_natural_32 -> {
+  else -> false
+}
+is_natural_64 -> {
+  else -> false
+}
+is_natural_8 -> {
+  else -> false
+}
+is_open -> {
+  T@U!val!23 T@U!val!15 -> true
+  T@U!val!24 T@U!val!15 -> true
+  T@U!val!27 T@U!val!15 -> true
+  T@U!val!32 T@U!val!15 -> true
+  else -> true
+}
+is_wrapped -> {
+  T@U!val!27 T@U!val!25 -> true
+  else -> true
+}
+IsHeap -> {
+  T@U!val!23 -> true
+  T@U!val!24 -> true
+  T@U!val!27 -> true
+  T@U!val!31 -> false
+  T@U!val!32 -> true
+  else -> true
+}
+IsModelField -> {
+  else -> false
+}
+lambda#0 -> {
+  else -> T@U!val!60
+}
+lambda#1 -> {
+  else -> T@U!val!60
+}
+Map#Card -> {
+  else -> 0
+}
+Map#Disjoint -> {
+  else -> false
+}
+Map#Domain -> {
+  else -> T@U!val!60
+}
+Map#Elements -> {
+  else -> T@U!val!60
+}
+Map#Empty -> {
+  else -> T@U!val!60
+}
+Map#Equal -> {
+  else -> false
+}
+Map#Image -> {
+  else -> T@U!val!60
+}
+Map#Inverse -> {
+  else -> T@U!val!60
+}
+Map#IsConstant -> {
+  else -> false
+}
+Map#Override -> {
+  else -> T@U!val!60
+}
+Map#Removed -> {
+  else -> T@U!val!60
+}
+Map#Restricted -> {
+  else -> T@U!val!60
+}
+Map#SequenceImage -> {
+  else -> T@U!val!60
+}
+Map#ToBag -> {
+  else -> T@U!val!60
+}
+Map#Update -> {
+  else -> T@U!val!60
+}
+MapType -> {
+  T@T!val!25 T@T!val!26 -> T@T!val!27
+  T@T!val!38 T@T!val!39 -> T@T!val!40
+  T@T!val!51 T@T!val!52 -> T@T!val!53
+  T@T!val!67 T@T!val!68 -> T@T!val!69
+  T@T!val!83 T@T!val!84 -> T@T!val!85
+  else -> T@T!val!27
+}
+MapType0Select -> {
+  T@U!val!23 T@U!val!15 T@U!val!16 -> true
+  T@U!val!23 T@U!val!15 T@U!val!19 -> false
+  T@U!val!23 T@U!val!21 T@U!val!12 -> T@U!val!45
+  T@U!val!23 T@U!val!21 T@U!val!13 -> false
+  T@U!val!23 T@U!val!21 T@U!val!16 -> true
+  T@U!val!23 T@U!val!21 T@U!val!17 -> false
+  T@U!val!23 T@U!val!21 T@U!val!18 -> false
+  T@U!val!23 T@U!val!25 T@U!val!16 -> false
+  T@U!val!23 T@U!val!4 T@U!val!16 -> true
+  T@U!val!23 T@U!val!5 T@U!val!16 -> true
+  T@U!val!24 T@U!val!15 T@U!val!16 -> true
+  T@U!val!24 T@U!val!15 T@U!val!19 -> false
+  T@U!val!24 T@U!val!21 T@U!val!12 -> T@U!val!45
+  T@U!val!24 T@U!val!21 T@U!val!13 -> false
+  T@U!val!24 T@U!val!21 T@U!val!16 -> true
+  T@U!val!24 T@U!val!21 T@U!val!17 -> false
+  T@U!val!24 T@U!val!21 T@U!val!18 -> false
+  T@U!val!24 T@U!val!25 T@U!val!10 -> 0
+  T@U!val!24 T@U!val!25 T@U!val!11 -> 0
+  T@U!val!24 T@U!val!25 T@U!val!12 -> false
+  T@U!val!24 T@U!val!25 T@U!val!13 -> false
+  T@U!val!24 T@U!val!25 T@U!val!16 -> true
+  T@U!val!24 T@U!val!25 T@U!val!17 -> false
+  T@U!val!24 T@U!val!25 T@U!val!18 -> false
+  T@U!val!24 T@U!val!25 T@U!val!19 -> false
+  T@U!val!24 T@U!val!25 T@U!val!20 -> T@U!val!15
+  T@U!val!24 T@U!val!4 T@U!val!16 -> true
+  T@U!val!24 T@U!val!5 T@U!val!16 -> true
+  T@U!val!27 T@U!val!15 T@U!val!16 -> true
+  T@U!val!27 T@U!val!15 T@U!val!19 -> false
+  T@U!val!27 T@U!val!21 T@U!val!12 -> T@U!val!45
+  T@U!val!27 T@U!val!25 T@U!val!10 -> 1
+  T@U!val!27 T@U!val!25 T@U!val!11 -> 1
+  T@U!val!27 T@U!val!25 T@U!val!12 -> T@U!val!58
+  T@U!val!27 T@U!val!25 T@U!val!13 -> false
+  T@U!val!27 T@U!val!25 T@U!val!17 -> false
+  T@U!val!27 T@U!val!25 T@U!val!18 -> false
+  T@U!val!27 T@U!val!25 T@U!val!19 -> true
+  T@U!val!27 T@U!val!25 T@U!val!20 -> T@U!val!15
+  T@U!val!27 T@U!val!4 T@U!val!16 -> true
+  T@U!val!27 T@U!val!5 T@U!val!16 -> true
+  T@U!val!31 T@U!val!21 T@U!val!13 -> T@U!val!56
+  T@U!val!31 T@U!val!21 T@U!val!17 -> T@U!val!54
+  T@U!val!31 T@U!val!21 T@U!val!18 -> T@U!val!55
+  T@U!val!32 T@U!val!15 T@U!val!16 -> true
+  T@U!val!32 T@U!val!15 T@U!val!19 -> false
+  T@U!val!32 T@U!val!21 T@U!val!12 -> T@U!val!45
+  T@U!val!32 T@U!val!21 T@U!val!13 -> false
+  T@U!val!32 T@U!val!21 T@U!val!16 -> true
+  T@U!val!32 T@U!val!21 T@U!val!17 -> false
+  T@U!val!32 T@U!val!21 T@U!val!18 -> false
+  T@U!val!32 T@U!val!21 T@U!val!19 -> true
+  T@U!val!32 T@U!val!25 T@U!val!16 -> false
+  T@U!val!32 T@U!val!33 T@U!val!12 -> T@U!val!49
+  T@U!val!32 T@U!val!33 T@U!val!13 -> false
+  T@U!val!32 T@U!val!33 T@U!val!16 -> true
+  T@U!val!32 T@U!val!33 T@U!val!17 -> false
+  T@U!val!32 T@U!val!33 T@U!val!18 -> false
+  T@U!val!32 T@U!val!33 T@U!val!19 -> true
+  T@U!val!32 T@U!val!34 T@U!val!16 -> true
+  T@U!val!32 T@U!val!4 T@U!val!16 -> true
+  T@U!val!32 T@U!val!5 T@U!val!16 -> true
+  else -> true
+}
+MapType0Store -> {
+  else -> T@U!val!60
+}
+MapType0Type -> {
+  T@T!val!7 -> T@T!val!15
+  else -> T@T!val!15
+}
+MapType0TypeInv0 -> {
+  T@T!val!15 -> T@T!val!7
+  else -> T@T!val!7
+}
+MapType1Select -> {
+  false T@U!val!21 -> false
+  false T@U!val!25 -> false
+  false T@U!val!33 -> false
+  T@U!val!14 T@U!val!21 -> true
+  else -> false
+}
+MapType1Store -> {
+  else -> T@U!val!60
+}
+MapType1Type -> {
+  T@T!val!0 T@T!val!0 -> T@T!val!95
+  T@T!val!29 T@T!val!0 -> T@T!val!30
+  T@T!val!29 T@T!val!2 -> T@T!val!32
+  T@T!val!55 T@T!val!0 -> T@T!val!56
+  T@T!val!55 T@T!val!2 -> T@T!val!61
+  T@T!val!7 T@T!val!0 -> T@T!val!42
+  T@T!val!7 T@T!val!2 -> T@T!val!14
+  T@T!val!71 T@T!val!0 -> T@T!val!72
+  T@T!val!71 T@T!val!2 -> T@T!val!77
+  T@T!val!87 T@T!val!0 -> T@T!val!88
+  T@T!val!87 T@T!val!2 -> T@T!val!93
+  else -> T@T!val!14
+}
+MapType1TypeInv0 -> {
+  T@T!val!0 -> T@T!val!71
+  T@T!val!14 -> T@T!val!7
+  T@T!val!2 -> T@T!val!55
+  T@T!val!30 -> T@T!val!29
+  T@T!val!32 -> T@T!val!29
+  T@T!val!42 -> T@T!val!7
+  T@T!val!56 -> T@T!val!55
+  T@T!val!61 -> T@T!val!55
+  T@T!val!7 -> T@T!val!87
+  T@T!val!72 -> T@T!val!71
+  T@T!val!77 -> T@T!val!71
+  T@T!val!88 -> T@T!val!87
+  T@T!val!9 -> T@T!val!29
+  T@T!val!93 -> T@T!val!87
+  T@T!val!95 -> T@T!val!0
+  else -> T@T!val!55
+}
+MapType1TypeInv1 -> {
+  T@T!val!14 -> T@T!val!2
+  T@T!val!30 -> T@T!val!0
+  T@T!val!32 -> T@T!val!2
+  T@T!val!42 -> T@T!val!0
+  T@T!val!56 -> T@T!val!0
+  T@T!val!61 -> T@T!val!2
+  T@T!val!72 -> T@T!val!0
+  T@T!val!77 -> T@T!val!2
+  T@T!val!88 -> T@T!val!0
+  T@T!val!93 -> T@T!val!2
+  T@T!val!95 -> T@T!val!0
+  else -> T@T!val!0
+}
+MapType2Select -> {
+  else -> T@U!val!60
+}
+MapType2Store -> {
+  else -> T@U!val!60
+}
+MapType2Type -> {
+  T@T!val!21 T@T!val!22 T@T!val!2 -> T@T!val!23
+  T@T!val!34 T@T!val!35 T@T!val!2 -> T@T!val!36
+  T@T!val!47 T@T!val!48 T@T!val!2 -> T@T!val!49
+  T@T!val!63 T@T!val!64 T@T!val!2 -> T@T!val!65
+  T@T!val!79 T@T!val!80 T@T!val!2 -> T@T!val!81
+  else -> T@T!val!23
+}
+MapType2TypeInv0 -> {
+  T@T!val!0 -> T@T!val!63
+  T@T!val!14 -> T@T!val!34
+  T@T!val!2 -> T@T!val!47
+  T@T!val!23 -> T@T!val!21
+  T@T!val!36 -> T@T!val!34
+  T@T!val!49 -> T@T!val!47
+  T@T!val!65 -> T@T!val!63
+  T@T!val!7 -> T@T!val!79
+  T@T!val!81 -> T@T!val!79
+  T@T!val!9 -> T@T!val!21
+  else -> T@T!val!63
+}
+MapType2TypeInv1 -> {
+  T@T!val!0 -> T@T!val!64
+  T@T!val!14 -> T@T!val!35
+  T@T!val!2 -> T@T!val!48
+  T@T!val!23 -> T@T!val!22
+  T@T!val!36 -> T@T!val!35
+  T@T!val!49 -> T@T!val!48
+  T@T!val!65 -> T@T!val!64
+  T@T!val!7 -> T@T!val!80
+  T@T!val!81 -> T@T!val!80
+  T@T!val!9 -> T@T!val!22
+  else -> T@T!val!64
+}
+MapType2TypeInv2 -> {
+  T@T!val!23 -> T@T!val!2
+  T@T!val!36 -> T@T!val!2
+  T@T!val!49 -> T@T!val!2
+  T@T!val!65 -> T@T!val!2
+  T@T!val!81 -> T@T!val!2
+  else -> T@T!val!2
+}
+MapType3Select -> {
+  T@U!val!29 T@U!val!25 T@U!val!10 -> true
+  T@U!val!29 T@U!val!25 T@U!val!11 -> true
+  T@U!val!29 T@U!val!25 T@U!val!12 -> true
+  T@U!val!29 T@U!val!25 T@U!val!13 -> true
+  T@U!val!29 T@U!val!25 T@U!val!16 -> true
+  T@U!val!29 T@U!val!25 T@U!val!17 -> true
+  T@U!val!29 T@U!val!25 T@U!val!18 -> true
+  T@U!val!29 T@U!val!25 T@U!val!19 -> true
+  T@U!val!29 T@U!val!25 T@U!val!20 -> true
+  T@U!val!38 T@U!val!21 T@U!val!12 -> false
+  T@U!val!38 T@U!val!21 T@U!val!19 -> false
+  T@U!val!43 T@U!val!21 T@U!val!12 -> false
+  T@U!val!43 T@U!val!21 T@U!val!19 -> false
+  T@U!val!53 T@U!val!25 T@U!val!10 -> true
+  T@U!val!53 T@U!val!25 T@U!val!11 -> true
+  T@U!val!53 T@U!val!25 T@U!val!12 -> true
+  T@U!val!53 T@U!val!25 T@U!val!19 -> true
+  else -> true
+}
+MapType3Store -> {
+  else -> T@U!val!60
+}
+MapType3Type -> {
+  T@T!val!7 T@T!val!2 -> T@T!val!16
+  else -> T@T!val!16
+}
+MapType3TypeInv0 -> {
+  T@T!val!16 -> T@T!val!7
+  else -> T@T!val!7
+}
+MapType3TypeInv1 -> {
+  T@T!val!16 -> T@T!val!2
+  else -> T@T!val!2
+}
+MapTypeInv0 -> {
+  T@T!val!0 -> T@T!val!67
+  T@T!val!14 -> T@T!val!38
+  T@T!val!2 -> T@T!val!51
+  T@T!val!27 -> T@T!val!25
+  T@T!val!40 -> T@T!val!38
+  T@T!val!53 -> T@T!val!51
+  T@T!val!69 -> T@T!val!67
+  T@T!val!7 -> T@T!val!83
+  T@T!val!85 -> T@T!val!83
+  T@T!val!9 -> T@T!val!25
+  else -> T@T!val!38
+}
+MapTypeInv1 -> {
+  T@T!val!0 -> T@T!val!68
+  T@T!val!14 -> T@T!val!39
+  T@T!val!2 -> T@T!val!52
+  T@T!val!27 -> T@T!val!26
+  T@T!val!40 -> T@T!val!39
+  T@T!val!53 -> T@T!val!52
+  T@T!val!69 -> T@T!val!68
+  T@T!val!7 -> T@T!val!84
+  T@T!val!85 -> T@T!val!84
+  T@T!val!9 -> T@T!val!26
+  else -> T@T!val!39
+}
+Math#clip -> {
+  else -> 0
+}
+max_real -> {
+  else -> 0.0
+}
+min_real -> {
+  else -> 0.0
+}
+modify.ANY.in_observers -> {
+  else -> T@U!val!60
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  else -> T@U!val!60
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> T@U!val!60
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  T@U!val!23 T@U!val!21 2 -> T@U!val!38
+  else -> T@U!val!38
+}
+modify.SUM_AND_MAX_1.default_create -> {
+  else -> T@U!val!60
+}
+modify.SUM_AND_MAX_1.in_observers -> {
+  else -> T@U!val!60
+}
+modify.SUM_AND_MAX_1.sum_and_max -> {
+  T@U!val!32 T@U!val!33 T@U!val!21 -> T@U!val!43
+  else -> T@U!val!43
+}
+modify.TUPLE^INTEGER_32#INTEGER_32^.in_observers -> {
+  else -> T@U!val!60
+}
+modulo -> {
+  else -> 0
+}
+multiply -> {
+  else -> 0
+}
+o'@@16!319!43 -> {
+  T@U!val!21 -> T@U!val!52
+  else -> T@U!val!52
+}
+o'@@19!319!49 -> {
+  T@U!val!25 -> T@U!val!57
+  else -> T@U!val!57
+}
+o'@@20!319!42 -> {
+  T@U!val!21 -> T@U!val!51
+  else -> T@U!val!51
+}
+Pair#Equal -> {
+  else -> false
+}
+Pair#Left -> {
+  else -> T@U!val!60
+}
+Pair#Make -> {
+  else -> T@U!val!60
+}
+Pair#Right -> {
+  else -> T@U!val!60
+}
+PairType -> {
+  else -> T@T!val!47
+}
+PairTypeInv0 -> {
+  else -> T@T!val!47
+}
+PairTypeInv1 -> {
+  else -> T@T!val!47
+}
+pre.fun.ANY.in_observers -> {
+  else -> false
+}
+pre.fun.MML_SEQUENCE^INTEGER_32^.item -> {
+  else -> false
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!23 T@U!val!21 -> true
+  T@U!val!27 T@U!val!21 -> true
+  T@U!val!27 T@U!val!25 -> true
+  T@U!val!32 T@U!val!21 -> true
+  T@U!val!32 T@U!val!33 -> true
+  else -> true
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  else -> false
+}
+pre.fun.SUM_AND_MAX_1.in_observers -> {
+  else -> false
+}
+pre.fun.SUM_AND_MAX_1.sum_and_max -> {
+  else -> false
+}
+pre.fun.TUPLE^INTEGER_32#INTEGER_32^.in_observers -> {
+  else -> false
+}
+q@abs -> {
+  else -> 0
+}
+q@max -> {
+  else -> 0
+}
+q@min -> {
+  else -> 0
+}
+read.fun.ANY.in_observers -> {
+  else -> T@U!val!60
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!23 T@U!val!21 -> T@U!val!36
+  T@U!val!32 T@U!val!21 -> T@U!val!35
+  else -> T@U!val!35
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> T@U!val!60
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  T@U!val!23 T@U!val!21 2 -> T@U!val!37
+  T@U!val!31 T@U!val!21 2 -> T@U!val!39
+  else -> T@U!val!37
+}
+read.fun.SUM_AND_MAX_1.in_observers -> {
+  else -> T@U!val!60
+}
+read.fun.SUM_AND_MAX_1.sum_and_max -> {
+  T@U!val!32 T@U!val!33 T@U!val!21 -> T@U!val!44
+  else -> T@U!val!44
+}
+read.fun.TUPLE^INTEGER_32#INTEGER_32^.in_observers -> {
+  else -> T@U!val!60
+}
+real_2_U -> {
+  else -> T@U!val!60
+}
+real_pow -> {
+  else -> 0.0
+}
+real_to_integer_32 -> {
+  else -> 0
+}
+real_to_integer_64 -> {
+  else -> 0
+}
+ref_rank_leq -> {
+  else -> false
+}
+regex_2_U -> {
+  else -> T@U!val!60
+}
+Rel#Card -> {
+  else -> 0
+}
+Rel#Difference -> {
+  else -> T@U!val!60
+}
+Rel#Domain -> {
+  else -> T@U!val!60
+}
+Rel#Empty -> {
+  else -> T@U!val!60
+}
+Rel#Equal -> {
+  else -> false
+}
+Rel#Extended -> {
+  else -> T@U!val!60
+}
+Rel#Image -> {
+  else -> T@U!val!60
+}
+Rel#ImageOf -> {
+  else -> T@U!val!60
+}
+Rel#Intersection -> {
+  else -> T@U!val!60
+}
+Rel#Inverse -> {
+  else -> T@U!val!60
+}
+Rel#Range -> {
+  else -> T@U!val!60
+}
+Rel#Removed -> {
+  else -> T@U!val!60
+}
+Rel#Restricted -> {
+  else -> T@U!val!60
+}
+Rel#Singleton -> {
+  else -> T@U!val!60
+}
+Rel#SymDifference -> {
+  else -> T@U!val!60
+}
+Rel#ToSet -> {
+  else -> T@U!val!60
+}
+Rel#Union -> {
+  else -> T@U!val!60
+}
+rmode_2_U -> {
+  else -> T@U!val!60
+}
+same_inside -> {
+  else -> false
+}
+Seq#Concat -> {
+  else -> T@U!val!60
+}
+Seq#Constant -> {
+  else -> T@U!val!60
+}
+Seq#Domain -> {
+  else -> T@U!val!60
+}
+Seq#Drop -> {
+  false 0 -> false
+  else -> false
+}
+Seq#Empty -> {
+  T@T!val!0 -> false
+  else -> false
+}
+Seq#Equal -> {
+  else -> false
+}
+Seq#Extended -> {
+  else -> T@U!val!60
+}
+Seq#Front -> {
+  else -> T@U!val!60
+}
+Seq#Has -> {
+  else -> false
+}
+Seq#IndexOf -> {
+  else -> 0
+}
+Seq#Interval -> {
+  else -> T@U!val!60
+}
+Seq#IsConstant -> {
+  else -> false
+}
+Seq#Item -> {
+  T@U!val!45 1 -> 2
+  else -> 2
+}
+Seq#Length -> {
+  false -> 0
+  T@U!val!45 -> 1
+  T@U!val!49 -> 1
+  T@U!val!58 -> 1
+  else -> 1
+}
+Seq#NoDuplicates -> {
+  else -> false
+}
+Seq#NonNull -> {
+  else -> false
+}
+Seq#Occurrences -> {
+  else -> 0
+}
+Seq#Prepended -> {
+  else -> T@U!val!60
+}
+Seq#Range -> {
+  else -> T@U!val!60
+}
+Seq#RemovedAt -> {
+  else -> T@U!val!60
+}
+Seq#Singleton -> {
+  else -> T@U!val!60
+}
+Seq#Tail -> {
+  else -> T@U!val!60
+}
+Seq#Take -> {
+  false 0 -> false
+  else -> false
+}
+Seq#ToBag -> {
+  false -> T@U!val!60
+  else -> T@U!val!60
+}
+Seq#ToMap -> {
+  else -> T@U!val!60
+}
+Seq#Update -> {
+  else -> T@U!val!60
+}
+SeqType -> {
+  T@T!val!0 -> T@T!val!9
+  T@T!val!44 -> T@T!val!45
+  T@T!val!58 -> T@T!val!59
+  T@T!val!74 -> T@T!val!75
+  T@T!val!90 -> T@T!val!91
+  else -> T@T!val!9
+}
+SeqTypeInv0 -> {
+  T@T!val!0 -> T@T!val!74
+  T@T!val!14 -> T@T!val!44
+  T@T!val!2 -> T@T!val!58
+  T@T!val!45 -> T@T!val!44
+  T@T!val!59 -> T@T!val!58
+  T@T!val!7 -> T@T!val!90
+  T@T!val!75 -> T@T!val!74
+  T@T!val!9 -> T@T!val!0
+  T@T!val!91 -> T@T!val!90
+  else -> T@T!val!58
+}
+Set#AnyItem -> {
+  else -> T@U!val!60
+}
+Set#Card -> {
+  else -> 0
+}
+Set#Difference -> {
+  else -> T@U!val!60
+}
+Set#Disjoint -> {
+  else -> false
+}
+Set#Empty -> {
+  T@T!val!7 -> false
+  else -> false
+}
+Set#Equal -> {
+  false false -> true
+  else -> true
+}
+Set#Extended -> {
+  else -> T@U!val!60
+}
+Set#Intersection -> {
+  else -> T@U!val!60
+}
+Set#Max -> {
+  else -> T@U!val!60
+}
+Set#Min -> {
+  else -> T@U!val!60
+}
+Set#NonNull -> {
+  else -> false
+}
+Set#Removed -> {
+  else -> T@U!val!60
+}
+Set#Singleton -> {
+  else -> T@U!val!60
+}
+Set#Subset -> {
+  else -> false
+}
+Set#SymDifference -> {
+  else -> T@U!val!60
+}
+Set#Union -> {
+  else -> T@U!val!60
+}
+sign -> {
+  else -> 0
+}
+sign_real -> {
+  else -> 0
+}
+string_2_U -> {
+  else -> T@U!val!60
+}
+subtract -> {
+  else -> 0
+}
+tickleBool -> {
+  false -> true
+  true -> true
+  else -> true
+}
+trans_owns -> {
+  else -> T@U!val!60
+}
+trigger.fun.ANY.in_observers -> {
+  else -> false
+}
+trigger.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  else -> false
+}
+trigger.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+trigger.fun.SUM_AND_MAX_1.in_observers -> {
+  else -> false
+}
+trigger.fun.TUPLE^INTEGER_32#INTEGER_32^.in_observers -> {
+  else -> false
+}
+type -> {
+  0 -> T@T!val!0
+  1 -> T@T!val!0
+  2 -> T@T!val!0
+  false -> T@T!val!2
+  false -> T@T!val!14
+  false -> T@T!val!9
+  T@U!val!0 -> T@T!val!6
+  T@U!val!1 -> T@T!val!6
+  T@U!val!10 -> T@T!val!8
+  T@U!val!11 -> T@T!val!8
+  T@U!val!12 -> T@T!val!10
+  T@U!val!13 -> T@T!val!11
+  T@U!val!14 -> T@T!val!14
+  T@U!val!15 -> T@T!val!7
+  T@U!val!16 -> T@T!val!12
+  T@U!val!17 -> T@T!val!11
+  T@U!val!18 -> T@T!val!11
+  T@U!val!19 -> T@T!val!12
+  T@U!val!2 -> T@T!val!6
+  T@U!val!20 -> T@T!val!13
+  T@U!val!21 -> T@T!val!7
+  T@U!val!22 -> T@T!val!15
+  T@U!val!23 -> T@T!val!15
+  T@U!val!24 -> T@T!val!15
+  T@U!val!25 -> T@T!val!7
+  T@U!val!26 -> T@T!val!16
+  T@U!val!27 -> T@T!val!15
+  T@U!val!28 -> T@T!val!15
+  T@U!val!29 -> T@T!val!16
+  T@U!val!3 -> T@T!val!6
+  T@U!val!30 -> T@T!val!15
+  T@U!val!31 -> T@T!val!15
+  T@U!val!32 -> T@T!val!15
+  T@U!val!33 -> T@T!val!7
+  T@U!val!34 -> T@T!val!7
+  T@U!val!35 -> T@T!val!16
+  T@U!val!36 -> T@T!val!16
+  T@U!val!37 -> T@T!val!16
+  T@U!val!38 -> T@T!val!16
+  T@U!val!39 -> T@T!val!16
+  T@U!val!4 -> T@T!val!7
+  T@U!val!43 -> T@T!val!16
+  T@U!val!44 -> T@T!val!16
+  T@U!val!45 -> T@T!val!9
+  T@U!val!47 -> T@T!val!6
+  T@U!val!49 -> T@T!val!9
+  T@U!val!5 -> T@T!val!7
+  T@U!val!51 -> T@T!val!17
+  T@U!val!52 -> T@T!val!18
+  T@U!val!53 -> T@T!val!16
+  T@U!val!54 -> T@T!val!14
+  T@U!val!55 -> T@T!val!14
+  T@U!val!56 -> T@T!val!14
+  T@U!val!57 -> T@T!val!19
+  T@U!val!58 -> T@T!val!9
+  T@U!val!6 -> T@T!val!6
+  T@U!val!60 -> T@T!val!95
+  T@U!val!7 -> T@T!val!6
+  T@U!val!8 -> T@T!val!6
+  T@U!val!9 -> T@T!val!6
+  true -> T@T!val!2
+  else -> T@T!val!16
+}
+type_of -> {
+  T@U!val!21 -> T@U!val!7
+  T@U!val!25 -> T@U!val!8
+  T@U!val!33 -> T@U!val!6
+  T@U!val!34 -> T@U!val!47
+  T@U!val!4 -> T@U!val!3
+  T@U!val!5 -> T@U!val!3
+  else -> T@U!val!3
+}
+U_2_bool -> {
+  false -> false
+  false -> false
+  false -> false
+  true -> true
+  else -> false
+}
+U_2_int -> {
+  0 -> 0
+  1 -> 1
+  2 -> 2
+  else -> 2
+}
+U_2_real -> {
+  else -> 0.0
+}
+U_2_regex -> {
+  else -> (str.to_re (""))
+}
+U_2_rmode -> {
+  else -> (roundTowardZero)
+}
+U_2_string -> {
+  else -> ("")
+}
+unboxed_bool -> {
+  T@U!val!4 -> true
+  T@U!val!5 -> false
+  else -> false
+}
+unboxed_int -> {
+  else -> 0
+}
+UOrdering2 -> {
+  T@U!val!0 T@U!val!0 -> true
+  T@U!val!0 T@U!val!7 -> false
+  T@U!val!3 T@U!val!7 -> false
+  T@U!val!47 T@U!val!7 -> false
+  T@U!val!47 T@U!val!8 -> true
+  T@U!val!6 T@U!val!0 -> true
+  T@U!val!6 T@U!val!7 -> false
+  T@U!val!7 T@U!val!0 -> true
+  T@U!val!7 T@U!val!7 -> true
+  T@U!val!7 T@U!val!9 -> true
+  T@U!val!8 T@U!val!6 -> false
+  T@U!val!8 T@U!val!7 -> false
+  T@U!val!9 T@U!val!0 -> true
+  T@U!val!9 T@U!val!9 -> true
+  else -> true
+}
+UOrdering3 -> {
+  else -> false
+}
+user_inv -> {
+  T@U!val!27 T@U!val!25 -> true
+  T@U!val!32 T@U!val!21 -> true
+  T@U!val!32 T@U!val!33 -> true
+  else -> true
+}
+user_inv_readable -> {
+  else -> T@U!val!60
+}
+*** STATE <initial>
+  a -> T@U!val!21
+  Current -> T@U!val!33
+  Heap -> T@U!val!32
+  local1 -> 0
+  local2 -> 0
+  local3 -> 0
+  PreLoopHeap_8 -> 
+  Result -> T@U!val!34
+  temp_10 -> 
+  temp_11 -> 
+  temp_12 -> 
+  temp_13 -> 
+  variant_9 -> 
+*** END_STATE
+*** STATE SUM_AND_MAX_1.sum_and_max
+  local1 -> 0
+  local2 -> 0
+  local3 -> 0
+  Result -> T@U!val!15
+  temp_10 -> 0
+  temp_11 -> 0
+  temp_12 -> 0
+  temp_13 -> T@U!val!15
+  variant_9 -> 0
+*** END_STATE
+*** END_MODEL

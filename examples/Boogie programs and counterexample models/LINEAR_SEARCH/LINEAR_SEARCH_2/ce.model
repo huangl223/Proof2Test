@@ -1,0 +1,1942 @@
+*** MODEL
+a@@117 -> T@U!val!19
+allocated -> T@U!val!13
+ANY -> T@U!val!0
+BOOLEAN -> T@U!val!3
+boolType -> T@T!val!2
+boxed_false -> T@U!val!5
+boxed_true -> T@U!val!4
+closed -> T@U!val!16
+Current -> T@U!val!21
+Heap -> T@U!val!18
+i_7@@1!426!44 -> (- 32283)
+INTEGER -> T@U!val!2
+intType -> T@T!val!0
+ITERABLE^INTEGER_32^ -> T@U!val!8
+LINEAR_SEARCH_2 -> T@U!val!6
+NONE -> T@U!val!1
+observers -> T@U!val!15
+owner -> T@U!val!17
+owns -> T@U!val!10
+PreLoopHeap_6 -> 
+readable -> T@U!val!20
+realType -> T@T!val!1
+refType -> T@T!val!7
+regexType -> T@T!val!5
+Result -> (- 2147475929)
+Result@0 -> 3
+Result@1 -> 4
+Result@2 -> 0
+rmodeType -> T@T!val!3
+SIMPLE_ARRAY^INTEGER_32^ -> T@U!val!7
+SIMPLE_ARRAY^INTEGER_32^.sequence -> T@U!val!9
+stringType -> T@T!val!4
+subjects -> T@U!val!14
+TypeType -> T@T!val!6
+universe -> T@U!val!11
+value@@4 -> (- 2147475282)
+variant_8 -> 
+variant_8@1 -> 0
+Void -> T@U!val!12
+writable -> T@U!val!22
+abs_real -> {
+  else -> 0.0
+}
+add -> {
+  else -> 0
+}
+attached -> {
+  T@U!val!18 T@U!val!21 T@U!val!7 -> false
+  else -> false
+}
+attached_exact -> {
+  T@U!val!18 T@U!val!19 T@U!val!6 -> false
+  T@U!val!18 T@U!val!19 T@U!val!7 -> true
+  T@U!val!18 T@U!val!21 T@U!val!6 -> true
+  T@U!val!18 T@U!val!21 T@U!val!7 -> false
+  else -> true
+}
+Bag#Card -> {
+  else -> 0
+}
+Bag#Difference -> {
+  else -> T@U!val!26
+}
+Bag#Disjoint -> {
+  else -> false
+}
+Bag#Domain -> {
+  else -> T@U!val!26
+}
+Bag#Empty -> {
+  else -> T@U!val!26
+}
+Bag#Equal -> {
+  else -> false
+}
+Bag#Extended -> {
+  else -> T@U!val!26
+}
+Bag#ExtendedMultiple -> {
+  else -> T@U!val!26
+}
+Bag#FromSet -> {
+  else -> T@U!val!26
+}
+Bag#Intersection -> {
+  else -> T@U!val!26
+}
+Bag#IsConstant -> {
+  else -> false
+}
+Bag#IsValid -> {
+  else -> false
+}
+Bag#Multiple -> {
+  else -> T@U!val!26
+}
+Bag#Removed -> {
+  else -> T@U!val!26
+}
+Bag#RemovedAll -> {
+  else -> T@U!val!26
+}
+Bag#RemovedMultiple -> {
+  else -> T@U!val!26
+}
+Bag#Restricted -> {
+  else -> T@U!val!26
+}
+Bag#Singleton -> {
+  else -> T@U!val!26
+}
+Bag#Subset -> {
+  else -> false
+}
+Bag#Union -> {
+  else -> T@U!val!26
+}
+bool_2_U -> {
+  false -> false
+  true -> true
+  else -> true
+}
+boxed_bool -> {
+  false -> T@U!val!5
+  true -> T@U!val!4
+  else -> T@U!val!5
+}
+boxed_int -> {
+  else -> T@U!val!26
+}
+ControlFlow -> {
+  0 0 -> 45
+  0 19 -> 16
+  0 2 -> (- 12)
+  0 29 -> 2
+  0 30 -> 29
+  0 45 -> 30
+  else -> 29
+}
+Ctor -> {
+  T@T!val!0 -> 0
+  T@T!val!1 -> 1
+  T@T!val!10 -> 8
+  T@T!val!11 -> 8
+  T@T!val!12 -> 8
+  T@T!val!13 -> 11
+  T@T!val!14 -> 10
+  T@T!val!15 -> 15
+  T@T!val!2 -> 2
+  T@T!val!3 -> 3
+  T@T!val!4 -> 4
+  T@T!val!5 -> 5
+  T@T!val!6 -> 6
+  T@T!val!7 -> 7
+  T@T!val!8 -> 9
+  T@T!val!9 -> 8
+  else -> 8
+}
+Default -> {
+  else -> T@U!val!26
+}
+detachable -> {
+  else -> false
+}
+detachable_exact -> {
+  else -> false
+}
+divide -> {
+  else -> 0
+}
+domain -> {
+  else -> T@U!val!26
+}
+FieldId -> {
+  T@U!val!10 T@U!val!6 -> (- 4)
+  T@U!val!10 T@U!val!7 -> (- 4)
+  T@U!val!10 T@U!val!8 -> (- 4)
+  T@U!val!13 T@U!val!6 -> (- 1)
+  T@U!val!13 T@U!val!7 -> (- 1)
+  T@U!val!13 T@U!val!8 -> (- 1)
+  T@U!val!14 T@U!val!6 -> (- 6)
+  T@U!val!14 T@U!val!7 -> (- 6)
+  T@U!val!14 T@U!val!8 -> (- 6)
+  T@U!val!15 T@U!val!6 -> (- 5)
+  T@U!val!15 T@U!val!7 -> (- 5)
+  T@U!val!15 T@U!val!8 -> (- 5)
+  T@U!val!16 T@U!val!6 -> (- 2)
+  T@U!val!16 T@U!val!7 -> (- 2)
+  T@U!val!16 T@U!val!8 -> (- 2)
+  T@U!val!17 T@U!val!6 -> (- 3)
+  T@U!val!17 T@U!val!7 -> (- 3)
+  T@U!val!17 T@U!val!8 -> (- 3)
+  T@U!val!9 T@U!val!7 -> 82
+  else -> (- 1)
+}
+FieldType -> {
+  T@T!val!13 -> T@T!val!10
+  T@T!val!2 -> T@T!val!11
+  T@T!val!7 -> T@T!val!12
+  T@T!val!8 -> T@T!val!9
+  else -> T@T!val!9
+}
+FieldTypeInv0 -> {
+  T@T!val!10 -> T@T!val!13
+  T@T!val!11 -> T@T!val!2
+  T@T!val!12 -> T@T!val!7
+  T@T!val!9 -> T@T!val!8
+  else -> T@T!val!8
+}
+Frame#Singleton -> {
+  else -> T@U!val!26
+}
+Frame#Subset -> {
+  T@U!val!23 T@U!val!20 -> true
+  T@U!val!25 T@U!val!20 -> true
+  T@U!val!26 T@U!val!20 -> true
+  T@U!val!29 T@U!val!22 -> true
+  T@U!val!30 T@U!val!20 -> true
+  else -> true
+}
+fun.ANY.in_observers -> {
+  else -> false
+}
+fun.LINEAR_SEARCH_2.in_observers -> {
+  else -> false
+}
+fun.LINEAR_SEARCH_2.linear_search -> {
+  else -> 0
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!18 T@U!val!19 -> 2
+  else -> 2
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  T@U!val!18 T@U!val!19 3 -> (- 2147475283)
+  else -> (- 2147475283)
+}
+fun0.ANY.in_observers -> {
+  else -> false
+}
+fun0.LINEAR_SEARCH_2.in_observers -> {
+  else -> false
+}
+fun0.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!18 T@U!val!19 -> 2
+  else -> 2
+}
+fun0.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+guard -> {
+  else -> false
+}
+has_whole_object -> {
+  else -> false
+}
+HeapSucc -> {
+  T@U!val!18 T@U!val!18 -> true
+  else -> true
+}
+in_domain -> {
+  else -> false
+}
+in_trans_owns -> {
+  else -> false
+}
+int_2_U -> {
+  (- 2147475283) -> (- 2147475283)
+  13 -> 13
+  else -> (- 2147475283)
+}
+int_to_integer_16 -> {
+  else -> 0
+}
+int_to_integer_32 -> {
+  else -> 0
+}
+int_to_integer_64 -> {
+  else -> 0
+}
+int_to_integer_8 -> {
+  else -> 0
+}
+int_to_natural_16 -> {
+  else -> 0
+}
+int_to_natural_32 -> {
+  else -> 0
+}
+int_to_natural_64 -> {
+  else -> 0
+}
+int_to_natural_8 -> {
+  else -> 0
+}
+Interval#FromRange -> {
+  else -> T@U!val!26
+}
+inv_frame_trigger -> {
+  else -> false
+}
+is_closed -> {
+  T@U!val!18 T@U!val!19 -> true
+  T@U!val!18 T@U!val!21 -> true
+  else -> true
+}
+is_frozen -> {
+  T@U!val!7 -> true
+  else -> true
+}
+is_integer_16 -> {
+  else -> false
+}
+is_integer_32 -> {
+  (- 2147475282) -> true
+  (- 2147475283) -> true
+  (- 2147475929) -> true
+  2 -> true
+  3 -> true
+  else -> true
+}
+is_integer_64 -> {
+  else -> false
+}
+is_integer_8 -> {
+  else -> false
+}
+is_natural -> {
+  else -> false
+}
+is_natural_16 -> {
+  else -> false
+}
+is_natural_32 -> {
+  else -> false
+}
+is_natural_64 -> {
+  else -> false
+}
+is_natural_8 -> {
+  else -> false
+}
+is_open -> {
+  T@U!val!18 T@U!val!12 -> true
+  else -> true
+}
+is_wrapped -> {
+  else -> false
+}
+IsHeap -> {
+  T@U!val!18 -> true
+  else -> true
+}
+IsModelField -> {
+  else -> false
+}
+lambda#0 -> {
+  else -> T@U!val!26
+}
+lambda#1 -> {
+  else -> T@U!val!26
+}
+Map#Card -> {
+  else -> 0
+}
+Map#Disjoint -> {
+  else -> false
+}
+Map#Domain -> {
+  else -> T@U!val!26
+}
+Map#Elements -> {
+  else -> T@U!val!26
+}
+Map#Empty -> {
+  else -> T@U!val!26
+}
+Map#Equal -> {
+  else -> false
+}
+Map#Image -> {
+  else -> T@U!val!26
+}
+Map#Inverse -> {
+  else -> T@U!val!26
+}
+Map#IsConstant -> {
+  else -> false
+}
+Map#Override -> {
+  else -> T@U!val!26
+}
+Map#Removed -> {
+  else -> T@U!val!26
+}
+Map#Restricted -> {
+  else -> T@U!val!26
+}
+Map#SequenceImage -> {
+  else -> T@U!val!26
+}
+Map#ToBag -> {
+  else -> T@U!val!26
+}
+Map#Update -> {
+  else -> T@U!val!26
+}
+MapType -> {
+  else -> T@T!val!3
+}
+MapType0Select -> {
+  T@U!val!18 T@U!val!12 T@U!val!13 -> true
+  T@U!val!18 T@U!val!12 T@U!val!16 -> false
+  T@U!val!18 T@U!val!19 T@U!val!10 -> T@U!val!31
+  T@U!val!18 T@U!val!19 T@U!val!13 -> true
+  T@U!val!18 T@U!val!19 T@U!val!14 -> T@U!val!31
+  T@U!val!18 T@U!val!19 T@U!val!15 -> T@U!val!31
+  T@U!val!18 T@U!val!19 T@U!val!16 -> true
+  T@U!val!18 T@U!val!19 T@U!val!9 -> T@U!val!24
+  T@U!val!18 T@U!val!21 T@U!val!10 -> T@U!val!31
+  T@U!val!18 T@U!val!21 T@U!val!13 -> true
+  T@U!val!18 T@U!val!21 T@U!val!14 -> T@U!val!31
+  T@U!val!18 T@U!val!21 T@U!val!15 -> T@U!val!31
+  T@U!val!18 T@U!val!21 T@U!val!16 -> true
+  T@U!val!18 T@U!val!4 T@U!val!13 -> true
+  T@U!val!18 T@U!val!5 T@U!val!13 -> true
+  else -> true
+}
+MapType0Store -> {
+  else -> T@U!val!26
+}
+MapType0Type -> {
+  T@T!val!7 -> T@T!val!14
+  else -> T@T!val!14
+}
+MapType0TypeInv0 -> {
+  T@T!val!14 -> T@T!val!7
+  else -> T@T!val!7
+}
+MapType1Select -> {
+  T@U!val!11 T@U!val!19 -> true
+  T@U!val!31 T@U!val!19 -> false
+  T@U!val!31 T@U!val!21 -> false
+  else -> false
+}
+MapType1Store -> {
+  else -> T@U!val!26
+}
+MapType1Type -> {
+  T@T!val!7 T@T!val!2 -> T@T!val!13
+  else -> T@T!val!13
+}
+MapType1TypeInv0 -> {
+  T@T!val!13 -> T@T!val!7
+  else -> T@T!val!7
+}
+MapType1TypeInv1 -> {
+  T@T!val!13 -> T@T!val!2
+  else -> T@T!val!2
+}
+MapType2Select -> {
+  else -> T@U!val!26
+}
+MapType2Store -> {
+  else -> T@U!val!26
+}
+MapType2Type -> {
+  else -> T@T!val!3
+}
+MapType2TypeInv0 -> {
+  else -> T@T!val!3
+}
+MapType2TypeInv1 -> {
+  else -> T@T!val!3
+}
+MapType2TypeInv2 -> {
+  else -> T@T!val!3
+}
+MapType3Select -> {
+  T@U!val!20 T@U!val!19 T@U!val!9 -> true
+  else -> true
+}
+MapType3Store -> {
+  else -> T@U!val!26
+}
+MapType3Type -> {
+  T@T!val!7 T@T!val!2 -> T@T!val!15
+  else -> T@T!val!15
+}
+MapType3TypeInv0 -> {
+  T@T!val!15 -> T@T!val!7
+  else -> T@T!val!7
+}
+MapType3TypeInv1 -> {
+  T@T!val!15 -> T@T!val!2
+  else -> T@T!val!2
+}
+MapTypeInv0 -> {
+  else -> T@T!val!3
+}
+MapTypeInv1 -> {
+  else -> T@T!val!3
+}
+Math#clip -> {
+  else -> 0
+}
+max_real -> {
+  else -> 0.0
+}
+min_real -> {
+  else -> 0.0
+}
+modify.ANY.in_observers -> {
+  else -> T@U!val!26
+}
+modify.LINEAR_SEARCH_2.default_create -> {
+  else -> T@U!val!26
+}
+modify.LINEAR_SEARCH_2.in_observers -> {
+  else -> T@U!val!26
+}
+modify.LINEAR_SEARCH_2.linear_search -> {
+  T@U!val!18 T@U!val!21 T@U!val!19 (- 2147475282) -> T@U!val!29
+  else -> T@U!val!29
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  else -> T@U!val!26
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> T@U!val!26
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  else -> T@U!val!26
+}
+modulo -> {
+  else -> 0
+}
+multiply -> {
+  else -> 0
+}
+Pair#Equal -> {
+  else -> false
+}
+Pair#Left -> {
+  else -> T@U!val!26
+}
+Pair#Make -> {
+  else -> T@U!val!26
+}
+Pair#Right -> {
+  else -> T@U!val!26
+}
+PairType -> {
+  else -> T@T!val!3
+}
+PairTypeInv0 -> {
+  else -> T@T!val!3
+}
+PairTypeInv1 -> {
+  else -> T@T!val!3
+}
+pre.fun.ANY.in_observers -> {
+  else -> false
+}
+pre.fun.LINEAR_SEARCH_2.in_observers -> {
+  else -> false
+}
+pre.fun.LINEAR_SEARCH_2.linear_search -> {
+  else -> false
+}
+pre.fun.MML_SEQUENCE^INTEGER_32^.item -> {
+  else -> false
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!18 T@U!val!19 -> true
+  else -> true
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  T@U!val!18 T@U!val!19 1 -> true
+  T@U!val!18 T@U!val!19 3 -> true
+  else -> true
+}
+q@abs -> {
+  else -> 0
+}
+q@max -> {
+  else -> 0
+}
+q@min -> {
+  else -> 0
+}
+read.fun.ANY.in_observers -> {
+  else -> T@U!val!26
+}
+read.fun.LINEAR_SEARCH_2.in_observers -> {
+  else -> T@U!val!26
+}
+read.fun.LINEAR_SEARCH_2.linear_search -> {
+  T@U!val!18 T@U!val!21 T@U!val!19 (- 2147475282) -> T@U!val!30
+  else -> T@U!val!30
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!18 T@U!val!19 -> T@U!val!23
+  else -> T@U!val!23
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> T@U!val!26
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  T@U!val!18 T@U!val!19 1 -> T@U!val!25
+  T@U!val!18 T@U!val!19 3 -> T@U!val!26
+  else -> T@U!val!25
+}
+real_2_U -> {
+  else -> T@U!val!26
+}
+real_pow -> {
+  else -> 0.0
+}
+real_to_integer_32 -> {
+  else -> 0
+}
+real_to_integer_64 -> {
+  else -> 0
+}
+ref_rank_leq -> {
+  else -> false
+}
+regex_2_U -> {
+  else -> T@U!val!26
+}
+Rel#Card -> {
+  else -> 0
+}
+Rel#Difference -> {
+  else -> T@U!val!26
+}
+Rel#Domain -> {
+  else -> T@U!val!26
+}
+Rel#Empty -> {
+  else -> T@U!val!26
+}
+Rel#Equal -> {
+  else -> false
+}
+Rel#Extended -> {
+  else -> T@U!val!26
+}
+Rel#Image -> {
+  else -> T@U!val!26
+}
+Rel#ImageOf -> {
+  else -> T@U!val!26
+}
+Rel#Intersection -> {
+  else -> T@U!val!26
+}
+Rel#Inverse -> {
+  else -> T@U!val!26
+}
+Rel#Range -> {
+  else -> T@U!val!26
+}
+Rel#Removed -> {
+  else -> T@U!val!26
+}
+Rel#Restricted -> {
+  else -> T@U!val!26
+}
+Rel#Singleton -> {
+  else -> T@U!val!26
+}
+Rel#SymDifference -> {
+  else -> T@U!val!26
+}
+Rel#ToSet -> {
+  else -> T@U!val!26
+}
+Rel#Union -> {
+  else -> T@U!val!26
+}
+rmode_2_U -> {
+  else -> T@U!val!26
+}
+same_inside -> {
+  else -> false
+}
+Seq#Concat -> {
+  else -> T@U!val!26
+}
+Seq#Constant -> {
+  else -> T@U!val!26
+}
+Seq#Domain -> {
+  else -> T@U!val!26
+}
+Seq#Drop -> {
+  else -> T@U!val!26
+}
+Seq#Empty -> {
+  else -> T@U!val!26
+}
+Seq#Equal -> {
+  else -> false
+}
+Seq#Extended -> {
+  else -> T@U!val!26
+}
+Seq#Front -> {
+  else -> T@U!val!26
+}
+Seq#Has -> {
+  else -> false
+}
+Seq#IndexOf -> {
+  else -> 0
+}
+Seq#Interval -> {
+  else -> T@U!val!26
+}
+Seq#IsConstant -> {
+  else -> false
+}
+Seq#Item -> {
+  T@U!val!24 (- 32283) -> 13
+  T@U!val!24 3 -> (- 2147475283)
+  else -> 13
+}
+Seq#Length -> {
+  T@U!val!24 -> 2
+  else -> 2
+}
+Seq#NoDuplicates -> {
+  else -> false
+}
+Seq#NonNull -> {
+  else -> false
+}
+Seq#Occurrences -> {
+  else -> 0
+}
+Seq#Prepended -> {
+  else -> T@U!val!26
+}
+Seq#Range -> {
+  else -> T@U!val!26
+}
+Seq#RemovedAt -> {
+  else -> T@U!val!26
+}
+Seq#Singleton -> {
+  else -> T@U!val!26
+}
+Seq#Tail -> {
+  else -> T@U!val!26
+}
+Seq#Take -> {
+  else -> T@U!val!26
+}
+Seq#ToBag -> {
+  else -> T@U!val!26
+}
+Seq#ToMap -> {
+  else -> T@U!val!26
+}
+Seq#Update -> {
+  else -> T@U!val!26
+}
+SeqType -> {
+  T@T!val!0 -> T@T!val!8
+  else -> T@T!val!8
+}
+SeqTypeInv0 -> {
+  T@T!val!8 -> T@T!val!0
+  else -> T@T!val!0
+}
+Set#AnyItem -> {
+  else -> T@U!val!26
+}
+Set#Card -> {
+  else -> 0
+}
+Set#Difference -> {
+  else -> T@U!val!26
+}
+Set#Disjoint -> {
+  else -> false
+}
+Set#Empty -> {
+  T@T!val!7 -> T@U!val!31
+  else -> T@U!val!31
+}
+Set#Equal -> {
+  T@U!val!31 T@U!val!31 -> true
+  else -> true
+}
+Set#Extended -> {
+  else -> T@U!val!26
+}
+Set#Intersection -> {
+  else -> T@U!val!26
+}
+Set#Max -> {
+  else -> T@U!val!26
+}
+Set#Min -> {
+  else -> T@U!val!26
+}
+Set#NonNull -> {
+  else -> false
+}
+Set#Removed -> {
+  else -> T@U!val!26
+}
+Set#Singleton -> {
+  else -> T@U!val!26
+}
+Set#Subset -> {
+  else -> false
+}
+Set#SymDifference -> {
+  else -> T@U!val!26
+}
+Set#Union -> {
+  else -> T@U!val!26
+}
+sign -> {
+  else -> 0
+}
+sign_real -> {
+  else -> 0
+}
+string_2_U -> {
+  else -> T@U!val!26
+}
+subtract -> {
+  else -> 0
+}
+tickleBool -> {
+  false -> true
+  true -> true
+  else -> true
+}
+trans_owns -> {
+  else -> T@U!val!26
+}
+trigger.fun.ANY.in_observers -> {
+  else -> false
+}
+trigger.fun.LINEAR_SEARCH_2.in_observers -> {
+  else -> false
+}
+trigger.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  else -> false
+}
+trigger.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+type -> {
+  (- 2147475283) -> T@T!val!0
+  13 -> T@T!val!0
+  false -> T@T!val!2
+  T@U!val!0 -> T@T!val!6
+  T@U!val!1 -> T@T!val!6
+  T@U!val!10 -> T@T!val!10
+  T@U!val!11 -> T@T!val!13
+  T@U!val!12 -> T@T!val!7
+  T@U!val!13 -> T@T!val!11
+  T@U!val!14 -> T@T!val!10
+  T@U!val!15 -> T@T!val!10
+  T@U!val!16 -> T@T!val!11
+  T@U!val!17 -> T@T!val!12
+  T@U!val!18 -> T@T!val!14
+  T@U!val!19 -> T@T!val!7
+  T@U!val!2 -> T@T!val!6
+  T@U!val!20 -> T@T!val!15
+  T@U!val!21 -> T@T!val!7
+  T@U!val!22 -> T@T!val!15
+  T@U!val!23 -> T@T!val!15
+  T@U!val!24 -> T@T!val!8
+  T@U!val!25 -> T@T!val!15
+  T@U!val!26 -> T@T!val!15
+  T@U!val!29 -> T@T!val!15
+  T@U!val!3 -> T@T!val!6
+  T@U!val!30 -> T@T!val!15
+  T@U!val!31 -> T@T!val!13
+  T@U!val!4 -> T@T!val!7
+  T@U!val!5 -> T@T!val!7
+  T@U!val!6 -> T@T!val!6
+  T@U!val!7 -> T@T!val!6
+  T@U!val!8 -> T@T!val!6
+  T@U!val!9 -> T@T!val!9
+  true -> T@T!val!2
+  else -> T@T!val!6
+}
+type_of -> {
+  T@U!val!19 -> T@U!val!7
+  T@U!val!21 -> T@U!val!6
+  T@U!val!4 -> T@U!val!3
+  T@U!val!5 -> T@U!val!3
+  else -> T@U!val!3
+}
+U_2_bool -> {
+  false -> false
+  true -> true
+  else -> true
+}
+U_2_int -> {
+  (- 2147475283) -> (- 2147475283)
+  13 -> 13
+  else -> 13
+}
+U_2_real -> {
+  else -> 0.0
+}
+U_2_regex -> {
+  else -> (str.to_re (""))
+}
+U_2_rmode -> {
+  else -> (roundTowardZero)
+}
+U_2_string -> {
+  else -> ("")
+}
+unboxed_bool -> {
+  T@U!val!4 -> true
+  T@U!val!5 -> false
+  else -> false
+}
+unboxed_int -> {
+  else -> 0
+}
+UOrdering2 -> {
+  T@U!val!0 T@U!val!0 -> true
+  T@U!val!0 T@U!val!7 -> false
+  T@U!val!3 T@U!val!7 -> false
+  T@U!val!6 T@U!val!0 -> true
+  T@U!val!6 T@U!val!7 -> false
+  T@U!val!7 T@U!val!0 -> true
+  T@U!val!7 T@U!val!8 -> true
+  T@U!val!8 T@U!val!0 -> true
+  T@U!val!8 T@U!val!8 -> true
+  else -> true
+}
+UOrdering3 -> {
+  else -> false
+}
+user_inv -> {
+  T@U!val!18 T@U!val!19 -> true
+  T@U!val!18 T@U!val!21 -> true
+  else -> true
+}
+user_inv_readable -> {
+  else -> T@U!val!26
+}
+*** STATE <initial>
+  a -> T@U!val!19
+  Current -> T@U!val!21
+  Heap -> T@U!val!18
+  PreLoopHeap_6 -> 
+  Result -> (- 2147475929)
+  value -> (- 2147475282)
+  variant_8 -> 
+*** END_STATE
+*** STATE LINEAR_SEARCH_2.linear_search
+  Result -> 0
+  variant_8 -> 0
+*** END_STATE
+*** END_MODEL
+*** MODEL
+a@@117 -> T@U!val!19
+allocated -> T@U!val!13
+ANY -> T@U!val!0
+BOOLEAN -> T@U!val!3
+boolType -> T@T!val!2
+boxed_false -> T@U!val!5
+boxed_true -> T@U!val!4
+closed -> T@U!val!16
+Current -> T@U!val!21
+Heap -> T@U!val!18
+INTEGER -> T@U!val!2
+intType -> T@T!val!0
+ITERABLE^INTEGER_32^ -> T@U!val!8
+LINEAR_SEARCH_2 -> T@U!val!6
+NONE -> T@U!val!1
+observers -> T@U!val!15
+owner -> T@U!val!17
+owns -> T@U!val!10
+PreLoopHeap_6 -> 
+readable -> T@U!val!20
+realType -> T@T!val!1
+refType -> T@T!val!7
+regexType -> T@T!val!5
+Result -> (- 2147475929)
+Result@0 -> 4
+Result@1 -> 0
+Result@2 -> 4
+rmodeType -> T@T!val!3
+SIMPLE_ARRAY^INTEGER_32^ -> T@U!val!7
+SIMPLE_ARRAY^INTEGER_32^.sequence -> T@U!val!9
+stringType -> T@T!val!4
+subjects -> T@U!val!14
+TypeType -> T@T!val!6
+universe -> T@U!val!11
+value@@4 -> (- 2147462410)
+variant_8 -> 
+variant_8@1 -> 0
+Void -> T@U!val!12
+writable -> T@U!val!22
+abs_real -> {
+  else -> 0.0
+}
+add -> {
+  else -> 0
+}
+attached -> {
+  T@U!val!18 T@U!val!21 T@U!val!7 -> false
+  else -> false
+}
+attached_exact -> {
+  T@U!val!18 T@U!val!19 T@U!val!6 -> false
+  T@U!val!18 T@U!val!19 T@U!val!7 -> true
+  T@U!val!18 T@U!val!21 T@U!val!6 -> true
+  T@U!val!18 T@U!val!21 T@U!val!7 -> false
+  else -> true
+}
+Bag#Card -> {
+  else -> 0
+}
+Bag#Difference -> {
+  else -> (- 2147462410)
+}
+Bag#Disjoint -> {
+  else -> false
+}
+Bag#Domain -> {
+  else -> (- 2147462410)
+}
+Bag#Empty -> {
+  else -> (- 2147462410)
+}
+Bag#Equal -> {
+  else -> false
+}
+Bag#Extended -> {
+  else -> (- 2147462410)
+}
+Bag#ExtendedMultiple -> {
+  else -> (- 2147462410)
+}
+Bag#FromSet -> {
+  else -> (- 2147462410)
+}
+Bag#Intersection -> {
+  else -> (- 2147462410)
+}
+Bag#IsConstant -> {
+  else -> false
+}
+Bag#IsValid -> {
+  else -> false
+}
+Bag#Multiple -> {
+  else -> (- 2147462410)
+}
+Bag#Removed -> {
+  else -> (- 2147462410)
+}
+Bag#RemovedAll -> {
+  else -> (- 2147462410)
+}
+Bag#RemovedMultiple -> {
+  else -> (- 2147462410)
+}
+Bag#Restricted -> {
+  else -> (- 2147462410)
+}
+Bag#Singleton -> {
+  else -> (- 2147462410)
+}
+Bag#Subset -> {
+  else -> false
+}
+Bag#Union -> {
+  else -> (- 2147462410)
+}
+bool_2_U -> {
+  false -> false
+  true -> true
+  else -> true
+}
+boxed_bool -> {
+  false -> T@U!val!5
+  true -> T@U!val!4
+  else -> T@U!val!5
+}
+boxed_int -> {
+  else -> (- 2147462410)
+}
+ControlFlow -> {
+  0 0 -> 45
+  0 19 -> (- 24)
+  0 28 -> 19
+  0 29 -> 28
+  0 30 -> 29
+  0 45 -> 30
+  else -> 29
+}
+Ctor -> {
+  T@T!val!0 -> 0
+  T@T!val!1 -> 1
+  T@T!val!10 -> 8
+  T@T!val!11 -> 8
+  T@T!val!12 -> 8
+  T@T!val!13 -> 11
+  T@T!val!14 -> 10
+  T@T!val!15 -> 15
+  T@T!val!2 -> 2
+  T@T!val!3 -> 3
+  T@T!val!4 -> 4
+  T@T!val!5 -> 5
+  T@T!val!6 -> 6
+  T@T!val!7 -> 7
+  T@T!val!8 -> 9
+  T@T!val!9 -> 8
+  else -> 8
+}
+Default -> {
+  else -> (- 2147462410)
+}
+detachable -> {
+  else -> false
+}
+detachable_exact -> {
+  else -> false
+}
+divide -> {
+  else -> 0
+}
+domain -> {
+  else -> (- 2147462410)
+}
+FieldId -> {
+  T@U!val!10 T@U!val!6 -> (- 4)
+  T@U!val!10 T@U!val!7 -> (- 4)
+  T@U!val!10 T@U!val!8 -> (- 4)
+  T@U!val!13 T@U!val!6 -> (- 1)
+  T@U!val!13 T@U!val!7 -> (- 1)
+  T@U!val!13 T@U!val!8 -> (- 1)
+  T@U!val!14 T@U!val!6 -> (- 6)
+  T@U!val!14 T@U!val!7 -> (- 6)
+  T@U!val!14 T@U!val!8 -> (- 6)
+  T@U!val!15 T@U!val!6 -> (- 5)
+  T@U!val!15 T@U!val!7 -> (- 5)
+  T@U!val!15 T@U!val!8 -> (- 5)
+  T@U!val!16 T@U!val!6 -> (- 2)
+  T@U!val!16 T@U!val!7 -> (- 2)
+  T@U!val!16 T@U!val!8 -> (- 2)
+  T@U!val!17 T@U!val!6 -> (- 3)
+  T@U!val!17 T@U!val!7 -> (- 3)
+  T@U!val!17 T@U!val!8 -> (- 3)
+  T@U!val!9 T@U!val!7 -> 82
+  else -> (- 1)
+}
+FieldType -> {
+  T@T!val!13 -> T@T!val!10
+  T@T!val!2 -> T@T!val!11
+  T@T!val!7 -> T@T!val!12
+  T@T!val!8 -> T@T!val!9
+  else -> T@T!val!9
+}
+FieldTypeInv0 -> {
+  T@T!val!10 -> T@T!val!13
+  T@T!val!11 -> T@T!val!2
+  T@T!val!12 -> T@T!val!7
+  T@T!val!9 -> T@T!val!8
+  else -> T@T!val!8
+}
+Frame#Singleton -> {
+  else -> (- 2147462410)
+}
+Frame#Subset -> {
+  T@U!val!23 T@U!val!20 -> true
+  T@U!val!25 T@U!val!20 -> true
+  T@U!val!28 T@U!val!22 -> true
+  T@U!val!29 T@U!val!20 -> true
+  else -> true
+}
+fun.ANY.in_observers -> {
+  else -> false
+}
+fun.LINEAR_SEARCH_2.in_observers -> {
+  else -> false
+}
+fun.LINEAR_SEARCH_2.linear_search -> {
+  else -> 0
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!18 T@U!val!19 -> 4
+  else -> 4
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  else -> 0
+}
+fun0.ANY.in_observers -> {
+  else -> false
+}
+fun0.LINEAR_SEARCH_2.in_observers -> {
+  else -> false
+}
+fun0.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!18 T@U!val!19 -> 4
+  else -> 4
+}
+fun0.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+guard -> {
+  else -> false
+}
+has_whole_object -> {
+  else -> false
+}
+HeapSucc -> {
+  T@U!val!18 T@U!val!18 -> true
+  else -> true
+}
+in_domain -> {
+  else -> false
+}
+in_trans_owns -> {
+  else -> false
+}
+int_2_U -> {
+  (- 2147462410) -> (- 2147462410)
+  else -> (- 2147462410)
+}
+int_to_integer_16 -> {
+  else -> 0
+}
+int_to_integer_32 -> {
+  else -> 0
+}
+int_to_integer_64 -> {
+  else -> 0
+}
+int_to_integer_8 -> {
+  else -> 0
+}
+int_to_natural_16 -> {
+  else -> 0
+}
+int_to_natural_32 -> {
+  else -> 0
+}
+int_to_natural_64 -> {
+  else -> 0
+}
+int_to_natural_8 -> {
+  else -> 0
+}
+Interval#FromRange -> {
+  else -> (- 2147462410)
+}
+inv_frame_trigger -> {
+  else -> false
+}
+is_closed -> {
+  T@U!val!18 T@U!val!19 -> true
+  T@U!val!18 T@U!val!21 -> true
+  else -> true
+}
+is_frozen -> {
+  T@U!val!7 -> true
+  else -> true
+}
+is_integer_16 -> {
+  else -> false
+}
+is_integer_32 -> {
+  (- 2147462410) -> true
+  (- 2147475929) -> true
+  4 -> true
+  else -> true
+}
+is_integer_64 -> {
+  else -> false
+}
+is_integer_8 -> {
+  else -> false
+}
+is_natural -> {
+  else -> false
+}
+is_natural_16 -> {
+  else -> false
+}
+is_natural_32 -> {
+  else -> false
+}
+is_natural_64 -> {
+  else -> false
+}
+is_natural_8 -> {
+  else -> false
+}
+is_open -> {
+  T@U!val!18 T@U!val!12 -> true
+  else -> true
+}
+is_wrapped -> {
+  else -> false
+}
+IsHeap -> {
+  T@U!val!18 -> true
+  else -> true
+}
+IsModelField -> {
+  else -> false
+}
+lambda#0 -> {
+  else -> (- 2147462410)
+}
+lambda#1 -> {
+  else -> (- 2147462410)
+}
+Map#Card -> {
+  else -> 0
+}
+Map#Disjoint -> {
+  else -> false
+}
+Map#Domain -> {
+  else -> (- 2147462410)
+}
+Map#Elements -> {
+  else -> (- 2147462410)
+}
+Map#Empty -> {
+  else -> (- 2147462410)
+}
+Map#Equal -> {
+  else -> false
+}
+Map#Image -> {
+  else -> (- 2147462410)
+}
+Map#Inverse -> {
+  else -> (- 2147462410)
+}
+Map#IsConstant -> {
+  else -> false
+}
+Map#Override -> {
+  else -> (- 2147462410)
+}
+Map#Removed -> {
+  else -> (- 2147462410)
+}
+Map#Restricted -> {
+  else -> (- 2147462410)
+}
+Map#SequenceImage -> {
+  else -> (- 2147462410)
+}
+Map#ToBag -> {
+  else -> (- 2147462410)
+}
+Map#Update -> {
+  else -> (- 2147462410)
+}
+MapType -> {
+  else -> T@T!val!3
+}
+MapType0Select -> {
+  T@U!val!18 T@U!val!12 T@U!val!13 -> true
+  T@U!val!18 T@U!val!12 T@U!val!16 -> false
+  T@U!val!18 T@U!val!19 T@U!val!10 -> T@U!val!30
+  T@U!val!18 T@U!val!19 T@U!val!13 -> true
+  T@U!val!18 T@U!val!19 T@U!val!14 -> T@U!val!30
+  T@U!val!18 T@U!val!19 T@U!val!15 -> T@U!val!30
+  T@U!val!18 T@U!val!19 T@U!val!16 -> true
+  T@U!val!18 T@U!val!19 T@U!val!9 -> T@U!val!24
+  T@U!val!18 T@U!val!21 T@U!val!10 -> T@U!val!30
+  T@U!val!18 T@U!val!21 T@U!val!13 -> true
+  T@U!val!18 T@U!val!21 T@U!val!14 -> T@U!val!30
+  T@U!val!18 T@U!val!21 T@U!val!15 -> T@U!val!30
+  T@U!val!18 T@U!val!21 T@U!val!16 -> true
+  T@U!val!18 T@U!val!4 T@U!val!13 -> true
+  T@U!val!18 T@U!val!5 T@U!val!13 -> true
+  else -> true
+}
+MapType0Store -> {
+  else -> (- 2147462410)
+}
+MapType0Type -> {
+  T@T!val!7 -> T@T!val!14
+  else -> T@T!val!14
+}
+MapType0TypeInv0 -> {
+  T@T!val!14 -> T@T!val!7
+  else -> T@T!val!7
+}
+MapType1Select -> {
+  T@U!val!11 T@U!val!19 -> true
+  T@U!val!30 T@U!val!19 -> false
+  T@U!val!30 T@U!val!21 -> false
+  else -> false
+}
+MapType1Store -> {
+  else -> (- 2147462410)
+}
+MapType1Type -> {
+  T@T!val!7 T@T!val!2 -> T@T!val!13
+  else -> T@T!val!13
+}
+MapType1TypeInv0 -> {
+  T@T!val!13 -> T@T!val!7
+  else -> T@T!val!7
+}
+MapType1TypeInv1 -> {
+  T@T!val!13 -> T@T!val!2
+  else -> T@T!val!2
+}
+MapType2Select -> {
+  else -> (- 2147462410)
+}
+MapType2Store -> {
+  else -> (- 2147462410)
+}
+MapType2Type -> {
+  else -> T@T!val!3
+}
+MapType2TypeInv0 -> {
+  else -> T@T!val!3
+}
+MapType2TypeInv1 -> {
+  else -> T@T!val!3
+}
+MapType2TypeInv2 -> {
+  else -> T@T!val!3
+}
+MapType3Select -> {
+  T@U!val!20 T@U!val!19 T@U!val!9 -> true
+  else -> true
+}
+MapType3Store -> {
+  else -> (- 2147462410)
+}
+MapType3Type -> {
+  T@T!val!7 T@T!val!2 -> T@T!val!15
+  else -> T@T!val!15
+}
+MapType3TypeInv0 -> {
+  T@T!val!15 -> T@T!val!7
+  else -> T@T!val!7
+}
+MapType3TypeInv1 -> {
+  T@T!val!15 -> T@T!val!2
+  else -> T@T!val!2
+}
+MapTypeInv0 -> {
+  else -> T@T!val!3
+}
+MapTypeInv1 -> {
+  else -> T@T!val!3
+}
+Math#clip -> {
+  else -> 0
+}
+max_real -> {
+  else -> 0.0
+}
+min_real -> {
+  else -> 0.0
+}
+modify.ANY.in_observers -> {
+  else -> (- 2147462410)
+}
+modify.LINEAR_SEARCH_2.default_create -> {
+  else -> (- 2147462410)
+}
+modify.LINEAR_SEARCH_2.in_observers -> {
+  else -> (- 2147462410)
+}
+modify.LINEAR_SEARCH_2.linear_search -> {
+  T@U!val!18 T@U!val!21 T@U!val!19 (- 2147462410) -> T@U!val!28
+  else -> T@U!val!28
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  else -> (- 2147462410)
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> (- 2147462410)
+}
+modify.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  else -> (- 2147462410)
+}
+modulo -> {
+  else -> 0
+}
+multiply -> {
+  else -> 0
+}
+Pair#Equal -> {
+  else -> false
+}
+Pair#Left -> {
+  else -> (- 2147462410)
+}
+Pair#Make -> {
+  else -> (- 2147462410)
+}
+Pair#Right -> {
+  else -> (- 2147462410)
+}
+PairType -> {
+  else -> T@T!val!3
+}
+PairTypeInv0 -> {
+  else -> T@T!val!3
+}
+PairTypeInv1 -> {
+  else -> T@T!val!3
+}
+pre.fun.ANY.in_observers -> {
+  else -> false
+}
+pre.fun.LINEAR_SEARCH_2.in_observers -> {
+  else -> false
+}
+pre.fun.LINEAR_SEARCH_2.linear_search -> {
+  else -> false
+}
+pre.fun.MML_SEQUENCE^INTEGER_32^.item -> {
+  else -> false
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!18 T@U!val!19 -> true
+  else -> true
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+pre.fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  T@U!val!18 T@U!val!19 1 -> true
+  else -> true
+}
+q@abs -> {
+  else -> 0
+}
+q@max -> {
+  else -> 0
+}
+q@min -> {
+  else -> 0
+}
+read.fun.ANY.in_observers -> {
+  else -> (- 2147462410)
+}
+read.fun.LINEAR_SEARCH_2.in_observers -> {
+  else -> (- 2147462410)
+}
+read.fun.LINEAR_SEARCH_2.linear_search -> {
+  T@U!val!18 T@U!val!21 T@U!val!19 (- 2147462410) -> T@U!val!29
+  else -> T@U!val!29
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  T@U!val!18 T@U!val!19 -> T@U!val!23
+  else -> T@U!val!23
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> (- 2147462410)
+}
+read.fun.SIMPLE_ARRAY^INTEGER_32^.item -> {
+  T@U!val!18 T@U!val!19 1 -> T@U!val!25
+  else -> T@U!val!25
+}
+real_2_U -> {
+  else -> (- 2147462410)
+}
+real_pow -> {
+  else -> 0.0
+}
+real_to_integer_32 -> {
+  else -> 0
+}
+real_to_integer_64 -> {
+  else -> 0
+}
+ref_rank_leq -> {
+  else -> false
+}
+regex_2_U -> {
+  else -> (- 2147462410)
+}
+Rel#Card -> {
+  else -> 0
+}
+Rel#Difference -> {
+  else -> (- 2147462410)
+}
+Rel#Domain -> {
+  else -> (- 2147462410)
+}
+Rel#Empty -> {
+  else -> (- 2147462410)
+}
+Rel#Equal -> {
+  else -> false
+}
+Rel#Extended -> {
+  else -> (- 2147462410)
+}
+Rel#Image -> {
+  else -> (- 2147462410)
+}
+Rel#ImageOf -> {
+  else -> (- 2147462410)
+}
+Rel#Intersection -> {
+  else -> (- 2147462410)
+}
+Rel#Inverse -> {
+  else -> (- 2147462410)
+}
+Rel#Range -> {
+  else -> (- 2147462410)
+}
+Rel#Removed -> {
+  else -> (- 2147462410)
+}
+Rel#Restricted -> {
+  else -> (- 2147462410)
+}
+Rel#Singleton -> {
+  else -> (- 2147462410)
+}
+Rel#SymDifference -> {
+  else -> (- 2147462410)
+}
+Rel#ToSet -> {
+  else -> (- 2147462410)
+}
+Rel#Union -> {
+  else -> (- 2147462410)
+}
+rmode_2_U -> {
+  else -> (- 2147462410)
+}
+same_inside -> {
+  else -> false
+}
+Seq#Concat -> {
+  else -> (- 2147462410)
+}
+Seq#Constant -> {
+  else -> (- 2147462410)
+}
+Seq#Domain -> {
+  else -> (- 2147462410)
+}
+Seq#Drop -> {
+  else -> (- 2147462410)
+}
+Seq#Empty -> {
+  else -> (- 2147462410)
+}
+Seq#Equal -> {
+  else -> false
+}
+Seq#Extended -> {
+  else -> (- 2147462410)
+}
+Seq#Front -> {
+  else -> (- 2147462410)
+}
+Seq#Has -> {
+  T@U!val!24 (- 2147462410) -> false
+  else -> false
+}
+Seq#IndexOf -> {
+  else -> 0
+}
+Seq#Interval -> {
+  else -> (- 2147462410)
+}
+Seq#IsConstant -> {
+  else -> false
+}
+Seq#Item -> {
+  else -> (- 2147462410)
+}
+Seq#Length -> {
+  T@U!val!24 -> 4
+  else -> 4
+}
+Seq#NoDuplicates -> {
+  else -> false
+}
+Seq#NonNull -> {
+  else -> false
+}
+Seq#Occurrences -> {
+  else -> 0
+}
+Seq#Prepended -> {
+  else -> (- 2147462410)
+}
+Seq#Range -> {
+  else -> (- 2147462410)
+}
+Seq#RemovedAt -> {
+  else -> (- 2147462410)
+}
+Seq#Singleton -> {
+  else -> (- 2147462410)
+}
+Seq#Tail -> {
+  else -> (- 2147462410)
+}
+Seq#Take -> {
+  else -> (- 2147462410)
+}
+Seq#ToBag -> {
+  else -> (- 2147462410)
+}
+Seq#ToMap -> {
+  else -> (- 2147462410)
+}
+Seq#Update -> {
+  else -> (- 2147462410)
+}
+SeqType -> {
+  T@T!val!0 -> T@T!val!8
+  else -> T@T!val!8
+}
+SeqTypeInv0 -> {
+  T@T!val!8 -> T@T!val!0
+  else -> T@T!val!0
+}
+Set#AnyItem -> {
+  else -> (- 2147462410)
+}
+Set#Card -> {
+  else -> 0
+}
+Set#Difference -> {
+  else -> (- 2147462410)
+}
+Set#Disjoint -> {
+  else -> false
+}
+Set#Empty -> {
+  T@T!val!7 -> T@U!val!30
+  else -> T@U!val!30
+}
+Set#Equal -> {
+  T@U!val!30 T@U!val!30 -> true
+  else -> true
+}
+Set#Extended -> {
+  else -> (- 2147462410)
+}
+Set#Intersection -> {
+  else -> (- 2147462410)
+}
+Set#Max -> {
+  else -> (- 2147462410)
+}
+Set#Min -> {
+  else -> (- 2147462410)
+}
+Set#NonNull -> {
+  else -> false
+}
+Set#Removed -> {
+  else -> (- 2147462410)
+}
+Set#Singleton -> {
+  else -> (- 2147462410)
+}
+Set#Subset -> {
+  else -> false
+}
+Set#SymDifference -> {
+  else -> (- 2147462410)
+}
+Set#Union -> {
+  else -> (- 2147462410)
+}
+sign -> {
+  else -> 0
+}
+sign_real -> {
+  else -> 0
+}
+string_2_U -> {
+  else -> (- 2147462410)
+}
+subtract -> {
+  else -> 0
+}
+tickleBool -> {
+  false -> true
+  true -> true
+  else -> true
+}
+trans_owns -> {
+  else -> (- 2147462410)
+}
+trigger.fun.ANY.in_observers -> {
+  else -> false
+}
+trigger.fun.LINEAR_SEARCH_2.in_observers -> {
+  else -> false
+}
+trigger.fun.SIMPLE_ARRAY^INTEGER_32^.count -> {
+  else -> false
+}
+trigger.fun.SIMPLE_ARRAY^INTEGER_32^.in_observers -> {
+  else -> false
+}
+type -> {
+  (- 2147462410) -> T@T!val!0
+  false -> T@T!val!2
+  T@U!val!0 -> T@T!val!6
+  T@U!val!1 -> T@T!val!6
+  T@U!val!10 -> T@T!val!10
+  T@U!val!11 -> T@T!val!13
+  T@U!val!12 -> T@T!val!7
+  T@U!val!13 -> T@T!val!11
+  T@U!val!14 -> T@T!val!10
+  T@U!val!15 -> T@T!val!10
+  T@U!val!16 -> T@T!val!11
+  T@U!val!17 -> T@T!val!12
+  T@U!val!18 -> T@T!val!14
+  T@U!val!19 -> T@T!val!7
+  T@U!val!2 -> T@T!val!6
+  T@U!val!20 -> T@T!val!15
+  T@U!val!21 -> T@T!val!7
+  T@U!val!22 -> T@T!val!15
+  T@U!val!23 -> T@T!val!15
+  T@U!val!24 -> T@T!val!8
+  T@U!val!25 -> T@T!val!15
+  T@U!val!28 -> T@T!val!15
+  T@U!val!29 -> T@T!val!15
+  T@U!val!3 -> T@T!val!6
+  T@U!val!30 -> T@T!val!13
+  T@U!val!4 -> T@T!val!7
+  T@U!val!5 -> T@T!val!7
+  T@U!val!6 -> T@T!val!6
+  T@U!val!7 -> T@T!val!6
+  T@U!val!8 -> T@T!val!6
+  T@U!val!9 -> T@T!val!9
+  true -> T@T!val!2
+  else -> T@T!val!6
+}
+type_of -> {
+  T@U!val!19 -> T@U!val!7
+  T@U!val!21 -> T@U!val!6
+  T@U!val!4 -> T@U!val!3
+  T@U!val!5 -> T@U!val!3
+  else -> T@U!val!3
+}
+U_2_bool -> {
+  false -> false
+  true -> true
+  else -> true
+}
+U_2_int -> {
+  (- 2147462410) -> (- 2147462410)
+  else -> (- 2147462410)
+}
+U_2_real -> {
+  else -> 0.0
+}
+U_2_regex -> {
+  else -> (str.to_re (""))
+}
+U_2_rmode -> {
+  else -> (roundTowardZero)
+}
+U_2_string -> {
+  else -> ("")
+}
+unboxed_bool -> {
+  T@U!val!4 -> true
+  T@U!val!5 -> false
+  else -> false
+}
+unboxed_int -> {
+  else -> 0
+}
+UOrdering2 -> {
+  T@U!val!0 T@U!val!0 -> true
+  T@U!val!0 T@U!val!7 -> false
+  T@U!val!3 T@U!val!7 -> false
+  T@U!val!6 T@U!val!0 -> true
+  T@U!val!6 T@U!val!7 -> false
+  T@U!val!7 T@U!val!0 -> true
+  T@U!val!7 T@U!val!8 -> true
+  T@U!val!8 T@U!val!0 -> true
+  T@U!val!8 T@U!val!8 -> true
+  else -> true
+}
+UOrdering3 -> {
+  else -> false
+}
+user_inv -> {
+  T@U!val!18 T@U!val!19 -> true
+  T@U!val!18 T@U!val!21 -> true
+  else -> true
+}
+user_inv_readable -> {
+  else -> (- 2147462410)
+}
+*** STATE <initial>
+  a -> T@U!val!19
+  Current -> T@U!val!21
+  Heap -> T@U!val!18
+  PreLoopHeap_6 -> 
+  Result -> (- 2147475929)
+  value -> (- 2147462410)
+  variant_8 -> 
+*** END_STATE
+*** STATE LINEAR_SEARCH_2.linear_search
+  Result -> 0
+  variant_8 -> 0
+*** END_STATE
+*** END_MODEL

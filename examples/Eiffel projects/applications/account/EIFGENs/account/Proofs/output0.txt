@@ -1,0 +1,32 @@
+Parsing C:\Users\HP\Documents\GitHub\Proof2Test\examples\Eiffel projects\applications\account\EIFGENs\account\Proofs\autoproof0.bpl
+Coalescing blocks...
+Inlining...
+[TRACE] Using prover: D:\z3-4.8.14-x64-win\bin\z3.exe
+
+Verifying ACCOUNT_1.invariant_admissibility_check ...
+  [0.684 s, 5 proof obligations]  verified
+
+Verifying create.ACCOUNT_1.make ...
+  [0.069 s, 23 proof obligations]  verified
+
+Verifying ACCOUNT_1.available_amount ...
+  [0.033 s, 2 proof obligations]  verified
+
+Verifying ACCOUNT_1.set_credit_limit ...
+  [0.049 s, 20 proof obligations]  verified
+
+Verifying ACCOUNT_1.deposit ...
+  [0.052 s, 21 proof obligations]  verified
+
+Verifying ACCOUNT_1.withdraw ...
+  [0.106 s, 21 proof obligations]  error
+C:\Users\HP\Documents\GitHub\Proof2Test\examples\Eiffel projects\applications\account\EIFGENs\account\Proofs\autoproof0.bpl(1022,1): Error: A postcondition might not hold on this return path.
+C:\Users\HP\Documents\GitHub\Proof2Test\examples\Eiffel projects\applications\account\EIFGENs\account\Proofs\autoproof0.bpl(970,3): Related location: This is the postcondition that might not hold.
+Execution trace:
+    C:\Users\HP\Documents\GitHub\Proof2Test\examples\Eiffel projects\applications\account\EIFGENs\account\Proofs\autoproof0.bpl(990,3): entry
+    C:\Users\HP\Documents\GitHub\Proof2Test\examples\Eiffel projects\applications\account\EIFGENs\account\Proofs\autoproof0.bpl(1017,3): anon17_Else
+
+Verifying ACCOUNT_1.transfer ...
+  [0.060 s, 13 proof obligations]  verified
+
+Boogie program verifier finished with 6 verified, 1 error

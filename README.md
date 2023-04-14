@@ -21,7 +21,7 @@ The generated tests can be executed in [AutoTest](http://se.inf.ethz.ch/research
 
 Example: 
 
-   `proof2test -b autoproof.bpl -m ce.model'
+   `proof2test -b autoproof.bpl -m ce.model`
 
 
 For more information, see the Proof2Test Tutorial.pdf

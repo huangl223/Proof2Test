@@ -19,6 +19,10 @@ The generated tests can be executed in [AutoTest](http://se.inf.ethz.ch/research
 - `bpl_file`: the name of the boogie program (.bpl)
 - `model_file`: the name of the counterexample model  (.model) 
 
+Example: 
+
+   `proof2test -b autoproof.bpl -m ce.model'
+
 
 For more information, see the Proof2Test Tutorial.pdf
 

@@ -1,5 +1,5 @@
-﻿note
-	explicit: "all"
+﻿--note
+--	explicit: "all"
 
 class
 	ACCOUNT
